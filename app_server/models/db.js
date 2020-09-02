@@ -1,15 +1,6 @@
 const mongoose = require('mongoose');
 let dbURI = 'mongodb://localhost/fluent';
 
-/*
-if (process.env.NODE_ENV === 'production') {
-  // dbURI = '<mongodb protocol>://<username>:<password>@<server address>:<port>/<database>'
-  //mongo "mongodb+srv://cluster0.e3g4l.mongodb.net/sample_airbnb" --username michael --password onelove
-
-  dbURI = 'mongodb://michael:onelove@cluster0.e3g4l.mongodb.net:27017/fluent'
-}
-*/
-
 if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;
 }
