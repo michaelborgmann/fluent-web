@@ -1,18 +1,29 @@
 const mongoose = require('mongoose');
-const dbURI = 'mongodb://localhost/fluent';
+let dbURI = 'mongodb://localhost/fluent';
 
-mongoose.connect(dbURI, {useNewUrlParser: true});
+/*
+if (process.env.NODE_ENV === 'production') {
+  // dbURI = '<mongodb protocol>://<username>:<password>@<server address>:<port>/<database>'
+  //mongo "mongodb+srv://cluster0.e3g4l.mongodb.net/sample_airbnb" --username michael --password onelove
+
+  dbURI = 'mongodb://michael:onelove@cluster0.e3g4l.mongodb.net:27017/fluent'
+}
+*/
+
+if (process.env.NODE_ENV === 'production') {
+  dbURI = process.env.MONGODB_URI;
+}
+
+mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true});
 
 mongoose.connection.on('connected', () => {
   console.log(`Mongoose connected to ${dbURI}`);
 });
-
 mongoose.connection.on('error', err => {
-  console.log('Mongoose connection error:', err);
+  console.log('Mongoose connection error X:', err);
 });
-
 mongoose.connection.on('disconnected', () => {
-  console.log('Mongoose disconnected');
+  console.log('Mongoose disconnected X');
 });
 
 const gracefulShutdown = (msg, callback) => {
@@ -38,3 +49,5 @@ process.on('SIGTERM', () => {
     process.exit(0);
   });
 });
+
+require('./locations');
