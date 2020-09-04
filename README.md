@@ -8,6 +8,14 @@ Start app with Nodemon: $ nodemon
 
 Start Heroku app locally: $ heroku local
 
+### Kill Nodemon
+
+Get PID:
+$ ps -ef | grep node
+
+Kill node app:
+sudo kill -9 <PID>
+
 ## MongoDB
 
 Create a database directory:
@@ -34,6 +42,71 @@ Set database URI by environment variable:
 $ export NODE_ENV=production
 $ export MONGODB_URI='mongodb+srv://<username>:<password>@<hostname>/<database>'
 $ nodemon
+
+### Use MongoDB
+
+* Each entry in a database is called a **document**
+* A group of documents is called **collection** (think table)
+* In Mongoose, the definition of a document is called a **schema**
+* Each individual data entity is defined in a schema is called a **path**.
+
+Connect to database:
+$ mongo "mongodb+srv://<HOST>/<DATABASE>" --username <USERNAME> --password <PASSWORD>
+
+Show all databases:
+$ show dbs
+
+Show collections in database:
+$ show collections
+
+Select database:
+$ use <DATABASE>
+
+Create collection:
+$ db.<COLLECTION>.save({
+	  <DOCUMENT>
+	})
+
+Adding subdocuments:
+$ db.<COLLECTION>.update({
+	  name: <OBJECT>
+	}, {
+		$push: {
+			<PATH>: {
+				<SUBDOCUMENT>
+			}
+		}
+  })
+
+Query information:
+$ db.<COLLECTION>.find()
+$ db.<COLLECTION>.find().pretty()
+
+
+#### Mongoose schema
+
+`pathname: type`
+
+Allowed types:
+* String
+* Number
+* Date
+* Boolean
+* Buffer (binary information)
+* Mixed (any data type)
+* Array
+* ObjectId
+
+### heroku
+
+Set environment variables on Heroku:
+$ heroku config:set NODE_ENV=production
+$ heroku config:set MONGODB_URI='mongodb+srv://<username>:<password>@<hostname>/<database>'
+
+Push to Heroku:
+$ git add -A
+$ git commit -m "Commit comment"
+$ git push heroku master
 
 ### Schemes
 
