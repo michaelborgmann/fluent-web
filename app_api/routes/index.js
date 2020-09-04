@@ -1,8 +1,15 @@
 
 const express = require('express');
 const router = express.Router();
+const lessonsController = require('../controllers/lessons');
 const ctrlLocations = require('../controllers/locations');
 const ctrlReviews = require('../controllers/reviews');
+
+// lessons
+router
+  .route('/lessons')
+  .get(lessonsController.getAllLessons)
+  .post(lessonsController.createLesson);
 
 // locations
 router
@@ -26,5 +33,5 @@ router
   .get(ctrlReviews.reviewsReadOne)
   .put(ctrlReviews.reviewsUpdateOne)
   .delete(ctrlReviews.reviewsDeleteOne);
-  
+
 module.exports = router;

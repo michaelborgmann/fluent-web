@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "8b361a91-527a-4683-94d8-b912c87d4bfa",
+		"name": "Fluent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Lessons",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"url": {
+					"raw": "{{base_URL}}/{{api}}/lessons",
+					"host": [
+						"{{base_URL}}"
+					],
+					"path": [
+						"{{api}}",
+						"lessons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Lesson",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "{{title}}",
+							"type": "text"
+						},
+						{
+							"key": "translation",
+							"value": "{{translation}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_URL}}/{{api}}/lessons",
+					"host": [
+						"{{base_URL}}"
+					],
+					"path": [
+						"{{api}}",
+						"lessons"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "29332dc8-a515-4bfc-92fc-c23ddf55ea1a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "35d0bf41-a56d-4735-a888-1584449a3502",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "675fea41-4792-461d-8765-1d2ac8563803",
+			"key": "base_URL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"id": "dc36e689-e0d9-4af0-a66c-2dd0de4bba8f",
+			"key": "api",
+			"value": "api",
+			"type": "string"
+		}
+	]
+}
