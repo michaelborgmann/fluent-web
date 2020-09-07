@@ -1,13 +1,14 @@
 const mongoose = require('mongoose');
-const Loc = mongoose.model('Lesson');
+const LessonModel = mongoose.model('Lesson');
 
 const getAllLessons = function (req, res) {
-  Loc.find({}, function(err, lessons) {
+  LessonModel.find({}, function(err, lessons) {
 
     if (!lessons) {
       result
         .json(404)
         .status({"message": "no lessons found"})
+
     } else if (err) {
       res
         .status(404)
@@ -22,20 +23,24 @@ const getAllLessons = function (req, res) {
 };
 
 const createLesson = function (req, res) {
-  Loc.create({
+
+  LessonModel.create({
     title: req.body.title,
     translation: req.body.translation,
     imageURL: req.body.imageURL
+
   }, (err, lesson) => {
     if (err) {
       res
         .status(400)
         .json(err)
+        
     } else {
       res
         .status(201)
         .json(lesson)
     }
+
   });
 };
 

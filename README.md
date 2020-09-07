@@ -24,6 +24,10 @@ Create a database directory:
 
 Launch MongoDB: $ mongod
 
+Launch locally:
+$ mkdir -p ~/data/db
+$ mongod -dbpath ~/data/db
+
 ### MDlab
 
 Connect fom shell:

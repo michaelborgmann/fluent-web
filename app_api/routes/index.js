@@ -1,9 +1,27 @@
 
 const express = require('express');
 const router = express.Router();
+
 const lessonsController = require('../controllers/lessons');
+const dialoguesController = require('../controllers/dialogues');
+const messagesController = require('../controllers/messages');
+
 const ctrlLocations = require('../controllers/locations');
 const ctrlReviews = require('../controllers/reviews');
+
+// dialogues
+router
+  .route('/dialogues')
+  .post(dialoguesController.createDialogue);
+
+router
+  .route('/dialogues/:dialogueid')
+  .get(dialoguesController.getDialogueById)
+
+// messages
+router
+  .route('/dialogues/:dialogueid/message')
+  .post(messagesController.createMessage);
 
 // lessons
 router
