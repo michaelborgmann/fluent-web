@@ -9,7 +9,8 @@ const lessonSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  imageURL: String
+  imageURL: String,
+  dialogue: {type: mongoose.Schema.Types.ObjectId, ref: 'Dialogue'}
 });
 
 mongoose.model('Lesson', lessonSchema);

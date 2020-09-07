@@ -27,14 +27,14 @@ const createLesson = function (req, res) {
   LessonModel.create({
     title: req.body.title,
     translation: req.body.translation,
-    imageURL: req.body.imageURL
-
+    imageURL: req.body.imageURL,
+    dialogue: req.body.dialogue
   }, (err, lesson) => {
     if (err) {
       res
         .status(400)
         .json(err)
-        
+
     } else {
       res
         .status(201)
