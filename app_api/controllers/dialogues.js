@@ -41,7 +41,7 @@ const getDialogueById = function (req, res) {
           .status(404)
           .json(err);
       }
-      
+
       res
         .status(200)
         .json(dialogue)
