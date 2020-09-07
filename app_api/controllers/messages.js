@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
-const DialogueModel = mongoose.model('Dialogue');
-
-// NOTE: This has no effect on saving a full document
+const DialogueModel = mongoose.model('Lesson');
 
 const createMessage = function (req, res) {
   const dialogueid = req.params.dialogueid;
@@ -40,6 +38,8 @@ const addMessage = function(req, res, dialogue) {
       $each: req.body
     });
 
+    //console.log(dialogue);
+
     dialogue.save((err, dialogue) => {
       if (err) {
         res
@@ -47,7 +47,6 @@ const addMessage = function(req, res, dialogue) {
           .json(err);
       } else {
         const thisMessage = dialogue.messages.slice(-req.body.length);//.pop();
-        console.log(thisMessage);
         res
           .status(201)
           .json(thisMessage);

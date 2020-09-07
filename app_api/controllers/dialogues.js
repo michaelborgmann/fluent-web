@@ -1,31 +1,70 @@
 const mongoose = require('mongoose');
-const DialogueModel = mongoose.model('Dialogue');
+const LessonModel = mongoose.model('Lesson');
 
 const createDialogue = function (req, res) {
+  const lessonid = req.params.lessonid;
 
-  DialogueModel.create({
-    targetLanguage: req.body.targetLanguage,
-    sourceLanguage: req.body.sourceLanguage,
-    messages: req.body.messages
+  if (lessonid) {
 
-  }, (err, dialogue) => {
-    if (err) {
-      res
-        .status(400)
-        .json(err)
+    LessonModel
+      .findById(lessonid)
+      //.select('dialogue')
+      .exec((err, lesson) => {
+        if (err) {
+          res
+            .status(400)
+            .json(err);
+        } else {
+          addDialogue(req, res, lesson);
+        }
 
-    } else {
-      res
-        .status(201)
-        .json(dialogue)
-    }
+      });
 
-  });
+  } else {
+    res
+      .status(404)
+      .json({
+        "message": "Not found, lessonid required"
+      });
+  }
 };
+
+const addDialogue = function(req, res, lesson) {
+  if (!lesson) {
+    res
+      .status(404)
+      .json({ "message": "lesson not found" });
+
+  } else {
+    
+    lesson.dialogue.push({
+      $each: req.body
+    });
+
+    console.log(req.body);
+
+    lesson.save((err, lesson) => {
+      if (err) {
+        res
+          .status(400)
+          .json(err);
+
+      } else {
+
+        const addedDialogue = lesson.dialogue.slice(-1).pop();
+         res
+           .status(201)
+           .json(addedDialogue);
+
+         }
+    });
+
+  }
+
+}
 
 const getDialogueById = function (req, res) {
   DialogueModel
-
     .findById(req.params.dialogueid)
     .exec((err, dialogue) => {
 

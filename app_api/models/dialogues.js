@@ -1,3 +1,4 @@
+/*
 const mongoose = require('mongoose');
 
 const messageSchema = new mongoose.Schema({
@@ -31,3 +32,4 @@ const dialogueSchema = new mongoose.Schema({
 });
 
 mongoose.model('Dialogue', dialogueSchema);
+*/

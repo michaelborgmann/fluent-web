@@ -28,7 +28,7 @@ const createLesson = function (req, res) {
     title: req.body.title,
     translation: req.body.translation,
     imageURL: req.body.imageURL,
-    dialogue: req.body.dialogue
+    //dialogue: req.body.dialogue
   }, (err, lesson) => {
     if (err) {
       res
