@@ -27,7 +27,7 @@ const dialogueSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  messages: [messageSchema]
+  //messages: [messageSchema]
 });
 
 const lessonSchema = new mongoose.Schema({
@@ -40,8 +40,8 @@ const lessonSchema = new mongoose.Schema({
     required: true
   },
   imageURL: String,
-  dialogue: [dialogueSchema]
-  //dialogue: [{ type: mongoose.Schema.Types.ObjectId, ref: "Dialogue"}]
+  //dialogue: [dialogueSchema]
+  dialogue: [{ type: mongoose.Schema.Types.ObjectId, ref: "Dialogue"}]
 });
 
 mongoose.model('Dialogue', dialogueSchema);

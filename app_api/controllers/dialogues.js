@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const LessonModel = mongoose.model('Lesson');
+const DialogueModel = mongoose.model('Dialogue');
 
-const createDialogue = function (req, res) {
+const createDialogue = async (req, res) => {
   const lessonid = req.params.lessonid;
 
   if (lessonid) {
@@ -29,7 +30,8 @@ const createDialogue = function (req, res) {
   }
 };
 
-const addDialogue = function(req, res, lesson) {
+const addDialogue = async (req, res, lesson) => {
+
   if (!lesson) {
     res
       .status(404)
@@ -37,26 +39,39 @@ const addDialogue = function(req, res, lesson) {
 
   } else {
 
-    lesson.dialogue.push({
-      $each: req.body
-    });
+    const dialogue = DialogueModel.create({
+      targetLanguage: req.body[0].targetLanguage,
+      sourceLanguage: req.body[0].sourceLanguage
+    } , (err, dialogue) => {
 
-    console.log(lesson.dialogue);
-
-    lesson.save((err, lesson) => {
       if (err) {
         res
           .status(400)
-          .json(err);
+          .json(err)
 
       } else {
 
-        const addedDialogue = lesson.dialogue.slice(-1).pop();
-         res
-           .status(201)
-           .json(addedDialogue);
+        lesson.dialogue.push(dialogue._id);
 
-         }
+        lesson.save((err, lesson) => {
+
+          if (err) {
+            res
+              .status(400)
+              .json(err)
+
+          } else {
+            console.log(res);
+
+            res
+              .status(201)
+              .json(dialogue)
+
+          }
+
+        });
+
+      }
     });
 
   }
