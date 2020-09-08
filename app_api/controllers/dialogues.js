@@ -41,9 +41,10 @@ const addDialogue = async (req, res, lesson) => {
 
     const dialogue = DialogueModel.create({
       targetLanguage: req.body[0].targetLanguage,
-      sourceLanguage: req.body[0].sourceLanguage
-    } , (err, dialogue) => {
+      sourceLanguage: req.body[0].sourceLanguage,
+      messages: req.body[0].messages
 
+    } , (err, dialogue) => {
       if (err) {
         res
           .status(400)
@@ -52,7 +53,6 @@ const addDialogue = async (req, res, lesson) => {
       } else {
 
         lesson.dialogue.push(dialogue._id);
-
         lesson.save((err, lesson) => {
 
           if (err) {
@@ -61,8 +61,6 @@ const addDialogue = async (req, res, lesson) => {
               .json(err)
 
           } else {
-            console.log(res);
-
             res
               .status(201)
               .json(dialogue)
