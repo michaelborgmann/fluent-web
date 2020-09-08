@@ -36,12 +36,12 @@ const addDialogue = function(req, res, lesson) {
       .json({ "message": "lesson not found" });
 
   } else {
-    
+
     lesson.dialogue.push({
       $each: req.body
     });
 
-    console.log(req.body);
+    console.log(lesson.dialogue);
 
     lesson.save((err, lesson) => {
       if (err) {

@@ -41,6 +41,8 @@ const lessonSchema = new mongoose.Schema({
   },
   imageURL: String,
   dialogue: [dialogueSchema]
+  //dialogue: [{ type: mongoose.Schema.Types.ObjectId, ref: "Dialogue"}]
 });
 
+mongoose.model('Dialogue', dialogueSchema);
 mongoose.model('Lesson', lessonSchema);
