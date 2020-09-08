@@ -9,7 +9,7 @@ const createDialogue = async (req, res) => {
 
     LessonModel
       .findById(lessonid)
-      //.select('dialogue')
+      .select('dialogue')
       .exec((err, lesson) => {
         if (err) {
           res

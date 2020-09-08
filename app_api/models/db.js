@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 let dbURI = 'mongodb://localhost/fluent';
-/*
+
 if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGODB_URI;
 }
-*/
+
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
