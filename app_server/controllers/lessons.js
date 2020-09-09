@@ -48,6 +48,22 @@ const allLessons = (req, res) => {
 
 }
 
+const renderLessonForm = (req, res) => {
+  res.render('lesson-add-form', {
+    title: 'Add new Lesson to Fluent',
+    pageHeader: { title: 'Add Lesson' }
+  });
+};
+
+const createLesson = (req, res) => {
+  renderReviewForm(req, res);
+}
+
+const addLesson = (req, res) => {
+};
+
 module.exports = {
-  allLessons
+  allLessons,
+  createLesson,
+  addLesson
 }

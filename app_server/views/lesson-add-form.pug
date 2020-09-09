@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+  .row
+    .col-12.col-md-8
+      form(action="", method="post", role="form")
+
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="title") Title
+          .col-12.col-sm-10
+            input#title.form-control(name="title")
+
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="translation") Translation
+          .col-12.col-sm-10
+            input#translation.form-control(name="translation")
+
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="cloudinary") Cloudinary Image URL
+          .col-12.col-sm-10
+            input#cloudinary.form-control(name="cloudinary")
+
+        a.btn.btn-primary.float-right(href=`/lesson/new`) Add Lesson

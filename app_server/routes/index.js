@@ -16,4 +16,9 @@ router.get('/', lessonsController.allLessons);
 router.get('/dialogues/:dialogueid', dialoguesController.showDialogue);
 // router.get('/dialogue/:dialogueid', dialoguesController.asdf);
 
+router
+  .route('/lessons/new')
+  .get(lessonsController.createLesson)
+  .post(lessonsController.addLesson);
+
 module.exports = router;
