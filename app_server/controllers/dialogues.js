@@ -9,6 +9,24 @@ if (process.env.NODE_ENV === 'production') {
 }
 */
 
+const showError = (req, res, status) => {
+  let title = '';
+  let content = '';
+
+  if (status === 404) {
+    title = '404, page not found';
+    content = 'Oooops. Looks like you can\'t find this page. Sorry.';
+
+  } else {
+    title = `${status}, something's gone wrong`;
+    content = 'Something, somewhere, has gone just a little bit wrong.';
+  }
+
+  res.status(status);
+
+  res.render('generic-text', { title, content });
+};
+
 const renderWebsite = (req, res, responseBody) => {
 
   let message = null;
@@ -45,8 +63,13 @@ const showDialogue = (req, res) => {
     json: {}
   };
 
-  request(requestOptions, (err, response, body) => {
-    renderWebsite(req, res, body);
+  request(requestOptions, (err, {statusCode}, body) => {
+    if (statusCode === 200) {
+      renderWebsite(req, res, body);
+
+    } else {
+      showError(req, res, statusCode);
+    }
   });
 }
 
