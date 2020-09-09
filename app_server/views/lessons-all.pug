@@ -1,0 +1,21 @@
+extends layout
+include _includes/sharedHTMLfunctions
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+        small &nbsp;#{pageHeader.strapline}
+  .row
+    .col-12.col-md-8
+      .error= message
+
+      each lesson in lessons
+        .card
+          .card-block
+            h4
+              a(href=`/dialogues/${lesson.dialogue[0]}`)= lesson.title
+            p.translation= lesson.translation
+
+    .col-12.col-md-4
+      p.lead Assimil - Portugiesisch ohne Mühe

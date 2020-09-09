@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"fluent.dialogues"}],"uuid":"d245ef3413a2431bac5312457e6e6ee7","collectionName":"dialogues"}

@@ -1,0 +1,24 @@
+extends layout
+include _includes/sharedHTMLfunctions
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+        small &nbsp;#{pageHeader.strapline}
+  .row
+    .col-12.col-md-8
+      .error= message
+
+      p #{dialogue.targetLanguage} - #{dialogue.sourceLanguage}
+
+      each message in dialogue.messages
+        .card
+          .card-block
+            p #{message.target}
+            p #{message.source}
+
+
+
+    .col-12.col-md-4
+      p.lead Assimil - Portugiesisch ohne Mühe
