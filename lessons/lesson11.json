@@ -1,0 +1,85 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648280/fluent/portuguese_course-lesson_11-na_rua.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Na rua",
+        "source": "Auf der Straße",
+        "audio": "lesson011_dialogue_00"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Po**des andar mais de**pre**ssa?",
+        "source": "Kannst du schneller (mehr schnell) gehen?",
+        "audio": "lesson011_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Não**, estou **mui**to carre**ga**do.",
+        "source": "Nein ich habe sehr schwer zu tragen (ich bin sehr belanden).",
+        "audio": "lesson011_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Po**de**mos tomar um **tá**xi. Não **que**res?",
+        "source": "Wir können ein Taxi nehmen. Willst du nicht [auch]?",
+        "audio": "lesson011_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Não. Os **tá**xis não **po**dem parar a**qui**.",
+        "source": "Nein. (Die) Taxis können hier nicht halten (halten hier).",
+        "audio": "lesson011_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "En**tão** temos de ir a **pé** até à esta**ção**?",
+        "source": "Dann müssen wir zu Fuß (bis) zum Bahnhof gehen (Wir haben zu gehen…)?",
+        "audio": "lesson011_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Não**. Podemos ir de auto**ca**rro. A pa**ra**gem é a**li**.",
+        "source": "Nein, wir können mit dem Bus fahren. Die Haltestelle ist da.",
+        "audio": "lesson011_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "A que **ho**ras temos de lá es**tar**?",
+        "source": "Um wieviel Uhr müssen wir dort sein (haben wir dort zu sein)?",
+        "audio": "lesson011_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "O com**bo**io parte às **no**ve.",
+        "source": "Der Zug fährt um neun ab.",
+        "audio": "lesson011_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E que **ho**ras são a**go**ra?",
+        "source": "Und wie spät ist es (welche Stunden sind) jetzt?",
+        "audio": "lesson011_dialogue_09"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "São **oi**to e **me**ia.",
+        "source": "Es ist halb neun (sind acht und einhalb).",
+        "audio": "lesson011_dialogue_10"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "En**tão** estamos altra**sa**dos! Temos de cor**rer!**",
+        "source": "Dann sind wir [zu] spät (verspätet)! Wir müssen [schnell] laufen (haben zu laufen)!",
+        "audio": "lesson011_dialogue_11"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Estás a brin**car**! A **ma**la é tão pe**sa**da que mal posso an**dar**…",
+        "source": "Du machst Spaß (spielst)! Der Koffer ist so schwer daß ich kaum gehen kann (kann gehen).",
+        "audio": "lesson011_dialogue_12"
+    }]
+}

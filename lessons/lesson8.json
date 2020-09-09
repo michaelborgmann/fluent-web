@@ -1,0 +1,103 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648279/fluent/portuguese_course-lesson_8-no_cafe.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "No café",
+        "source": "Im Cafe",
+        "audio": "lesson008_dialogue_00"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Faz** fa**vor**…",
+        "source": "Bitte schön (tun Sie den Gefallen)…",
+        "audio": "lesson008_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "waiter",
+        "target": "**Fa**zem fa**vor** de di**zer**.",
+        "source": "Sie wünschen (tun Sie den Gefallen, zu sagen)?",
+        "audio": "lesson008_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "woman",
+        "target": "**Eu** **to**mo um ca**fé**.",
+        "source": "Ich nehme einen Kaffee.",
+        "audio": "lesson008_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Para **mim** uma cer**ve**ja, por fa**vor**. **Te**nho muita **se**de.",
+        "source": "Für mich ein Bier, bitte. Ich habe großen (viel) Durst.",
+        "audio": "lesson008_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "waiter",
+        "target": "E os me**ni**nos, não **be**bem **na**da?",
+        "source": "Und die Kinder (Kleinen), trinken sie nichts (nicht trinken nichts)?",
+        "audio": "lesson008_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Tal**vez** um **su**mo. Tem **su**mo de **fru**ta?",
+        "source": "Vielleicht einen Saft. Haben Sie Fruchtsaft (Saft von Obst)?",
+        "audio": "lesson008_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "waiter",
+        "target": "Temos **sim**: la**ran**ja, ana**nás**, ma**ça**, **pé**ssego…",
+        "source": "Haben wir (ja): Orange, Ananas, Apfel, Pfirsich…",
+        "audio": "lesson008_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "girl",
+        "target": "Eu **que**ro um **su**mo de la**ran**ja.",
+        "source": "Ich will einen Oranensaft",
+        "audio": "lesson008_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "waiter",
+        "target": "**Fres**co ou natu**ral**?",
+        "source": "Kalt oder natur?",
+        "audio": "lesson008_dialogue_09"
+    }, {
+        "type": "message",
+        "sender": "girl",
+        "target": "Natu**ral**, é me**lhor**.",
+        "source": "Natur ist besser",
+        "audio": "lesson008_dialogue_10"
+    }, {
+        "type": "message",
+        "sender": "boy",
+        "target": "Eu **que**ro um ge**la**do.",
+        "source": "Ich will ein Eis.",
+        "audio": "lesson008_dialogue_11"
+    }, {
+        "type": "message",
+        "sender": "waiter",
+        "target": "Ge**la**dos não **te**mos…",
+        "source": "Eis haben wir nicht (nicht haben).",
+        "audio": "lesson008_dialogue_12"
+    }, {
+        "type": "message",
+        "sender": "boy",
+        "target": "En**tão** um **bo**lo… muito **gran**de!",
+        "source": "[Also] dann einen Kuchen… sehr groß!",
+        "audio": "lesson008_dialogue_13"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Tens **fo**me?",
+        "source": "Hast du Hunger?",
+        "audio": "lesson008_dialogue_14"
+    }, {
+        "type": "message",
+        "sender": "boy",
+        "target": "Não, não **te**nho **fo**me, mas sou gu**lo**su!",
+        "source": "Nein, ich haben keinen (nicht habe) Hunger, aber ich bin eine Naschkatze (\"naschsüchtig\").",
+        "audio": "lesson008_dialogue_15"
+    }]
+}

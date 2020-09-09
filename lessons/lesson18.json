@@ -1,0 +1,62 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648277/fluent/portuguese_course-lesson_18-na_praia.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Na praia",
+        "source": "Am (im) Strand"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Es**tá** mais calor **ho**je do que **on**tem! Não **que**res um ge**la**do?",
+        "source": "Es ist heute wärmer (mehr warm) als gestern. Willst du (nicht) ein Eis?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Não**, prefiro ir dar um mer**gu**lho e nadar um **pou**co.",
+        "source": "Nein, ich ziehe es vor, ins Wasser zu springen (eintauchen) und ein bißchen zu schwimmen."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Toma cui**da**do! O mar está **bra*vo.",
+        "source": "Gib (nimm) acht. Das Wasser ist unruhig (wild)."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Não faz **mal**. Gosto de ondas **gran**des. Quando o **mar** está a**ssim** sinto-me como um **pei**xe dentro de **á**gua. **Dá**-me uma co**ra**gem que eu **pró**prio fico espan**ta**do.",
+        "source": "[Das] macht nichts (schlecht). Ich mag große Wellen. Wenn das Meer so ist, fühle ich mich wie ein Fisch im (innerhalb) Wasser. [Das] gibt mir [so] einen Mut, daß ich selbst erstaunt bin (erstaung bleibe)."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Isso é con**ver**sa! Até uma sardinha te a**ssus**ta.",
+        "source": "Das ist [bloß] Gerede (Gespräch)! Sogar eine Sardine erschreckt dich."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Nada **di**sso. Vais assistir uma pro**e**za digna de Tar**zan**.",
+        "source": "Nichts dergleichen (davon). Du wirst (gehst) einer Tarzan würdigen Heldentat zususehen."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Mas agore me **lem**bro. **Tu** nem sequer sabes na**dar**!",
+        "source": "Aber jetzt erinnere ich mich [daran]. Du kannst nicht einmal schwimmen."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "O **quê**! Isso é uma grande men**ti**ra. Ando a aprender a na**dar por correspon**dên**cia.",
+        "source": "Was? Das ist eine große Lüge. [Seit einiger Zeit] lerne ich Schwimmen durch Fernstudium."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "En**tão** por que é que andas de **bó**ia à volta da cin**tu**ra?",
+        "source": "Warum (warum st es, daß) hast du dann einen Schwimmreifen um die Taille?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Para não me afo**gar**…",
+        "source": "Um (mich) nicht zu ertrinken…"
+    }]
+}

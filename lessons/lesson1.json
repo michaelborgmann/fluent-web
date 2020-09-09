@@ -1,0 +1,87 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648281/fluent/portuguese_course-lesson_1-na_livraria.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Na livra__ri__a",
+        "source": "In der Buchhandlung!",
+        "audio": "lesson001_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Bom-__di__a!",
+        "source": "Guten Morgen!",
+        "audio": "lesson001_dialogue_02",
+        "notes": [
+            "*Bom dia*, wörtlich: \"guten Tag\". Man sagt es aber nur vormittags = guten Morgen"
+        ]
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Bom-__di__a! O se__nhor__ é portu__guês__?",
+        "source": "Guten Morgen! Sind Sie (der Herr ist) Portugiese?",
+        "audio": "lesson001_dialogue_03",
+        "notes": [
+            "Für die höfliche Anrede wird *o senhor/a senhora*, bzw. Plural *os senhores/as senhoras* benutzt: *o senhor* (u ße**njor**) / *a senhora* (a ße**njo**ra). *Você* wird auch sehr häufig verwendet und bedeutet auch \"Sie\", ist aber nicht so förmlich. (*O senhor/a senhora/você* + 3. Person Singular: *o senhor é/fa/a* = Sie sind / sprechen.)"
+        ]
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Sou, __sim__… Que de__se__ja?",
+        "source": "Ja (bin ja)… Was wünschen Sie (was wünscht)?",
+        "audio": "lesson001_dialogue_04",
+        "notes": [
+            "Um eine Frage zu behahen, ist es üblich, das Verb zu wiederholen. *E português? Sou.* Um die Antwort zu betonen, wird das Wort \"ja\" = *sim* hinzugefügt: *Sou sim*",
+            "Wie Sie gerade festgestellt haben, kann man auch bei der Anrede des Personalpronomen weglannen. Im Portugiesischen wird es oft weggelassen: *sou português* = ich bn Portugiese, *que deseja?* = was wünschen Sie?, *não falo bem* = ich speche nicht gut, usw."
+        ]
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Pro__cu__ro um __li__vro para estu__dar__ portu__guês__.",
+        "source": "[Ich] suche ein Buch, um Portugiesisch zu lernen.",
+        "audio": "lesson001_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "__Co__mo __é__ o __li__vro? __Gran__de ou pe__que__no?",
+        "source": "Wie ist das Buch? Groß oder klein?",
+        "audio": "lesson001_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Pe__que__no.",
+        "source": "Klein.",
+        "audio": "lesson001_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Mas o se__nhor__ já __fa__la portu__guês__!",
+        "source": "Aber Sie sprechen (der Herr spricht) schon Portugiesisch!",
+        "audio": "lesson001_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Não __fa__lo bem, sou estran__gei__ro!",
+        "source": "[Ich] spreche nicth (nicht spreche) gut, [ich] bin Ausländer!",
+        "audio": "lesson001_dialogue_09",
+        "notes": [
+            "Diphthonge (Doppellaute), die eine Tilde (~) tragen, sind stark nasaliert. Sie werden später feststellen, daß es auch andere Diphthonge gibt, die ebenfalls eine Tilde tragen. Versuchen Sie sie näselnd (mit zugekniffener Nase) auszusprechen. Der Laut *ão* (au(ng)): *lição, não*, ist äußerst wichtig im Portugiesischen. Denken Sie an das Wort \"Passau\"; dann nasalieren Sie *au*, als ob ein *ng* angehängt wäre. Jetzt ersuchen Sie, *aung* in einem Laut auszusprechen. Also, dann: *o pão é bom* *u p**au**(ng) ä **bong**) = das Brot ist gut. *Om* wird schwächer ausgesprochen als *ão*. *A lição é longa *a li**ssau**(ng) ä **lo**nga) = die Lektion ist lang.",
+            "Die Verneinung wird durch *não*, das immer vor dem Verb steht ausgedrückt: *não, não falo bem* = nein, ich spreche nicht gut (*não* = nein/nicht)."
+        ]
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "É in__glês__?",
+        "source": "Sind [Sie] (ist) Engländer?",
+        "audio": "lesson001_dialogue_10"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "__Não__, sou fran__cês__. Mas __mo__ro em Portu__gal__.",
+        "source": "Nein, [ich] bin Franzose. Aber [ich] wohne in Portugal.",
+        "audio": "lesson001_dialogue_11"
+    }]
+}

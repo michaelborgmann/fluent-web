@@ -1,0 +1,72 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648286/fluent/portuguese_course-lesson_12-na_estacao.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Na estação",
+        "source": "Im Bahnhof",
+        "audio": "lesson012_dialogue_00"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Faz fa**vor**. Este com**bo**io vai para Lis**bo**a?",
+        "source": "Entschuldigen Sie bitte (tun Sie den Gefallen). Fährt dieser Zug nach Lissabon? (Dieser Zug hier fährt…)",
+        "audio": "lesson012_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Não, este a**qui** vai para Ma**drid**. Para Lis**bo**a é a**que**le.",
+        "source": "Nein, dieser hier fährt nach Madrid. Nach Lissabon fährt (ist) jener.",
+        "audio": "lesson012_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Qual**, por fa**vor**?",
+        "source": "Welcher, bitte?",
+        "audio": "lesson012_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Aquele a**li**. Na via **cin**co.",
+        "source": "Jener (dieser dort), auf (in der) Gleis fünf.",
+        "audio": "lesson012_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Muito obri**ga**do.",
+        "source": "Vielen Dank.",
+        "audio": "lesson012_dialogue_05"
+    }, {
+        "type": "title",
+        "target": "No comboio",
+        "source": "Im Zug",
+        "audio": "lesson012_dialogue_12b"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Des**cul**pe, que número **tem** o seu lu**gar**?",
+        "source": "Entschuldigen Sie, was für eine Nummer hat Ihr Platz?",
+        "audio": "lesson012_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "O meu lu**gar** é o número **tre**ze.",
+        "source": "Mein Platz hat (ist) die Nummer dreizehn.",
+        "audio": "lesson012_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Ah! Então não é **e**sse. O número **tre**ze é **es**te.",
+        "source": "Ach [so]! Dann ist [es] nicht dieser da. (Die) Nummer dreizehn ist dieser (hier).",
+        "audio": "lesson012_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Eu **sei**, mas como sou superstici**o**so não **que**ro sentar-me a**í**.",
+        "source": "Ich weiß, aber da ich abergläubisch bin, will ich mich nicht da hinsetzen (hinsetzen mich da).",
+        "audio": "lesson012_dialogue_09"
+    }]
+}

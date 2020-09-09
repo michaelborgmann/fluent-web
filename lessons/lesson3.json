@@ -1,0 +1,67 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648280/fluent/portuguese_course-lesson_3-a_procura_do_medico.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "À pro**cu**ra do **mé**dico",
+        "source": "Auf der Suche nach einem Arzt",
+        "audio": "lesson003_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**On**de es**tá** o **mé**dico?",
+        "source": "Wo ist der Arzt?",
+        "audio": "lesson003_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Es**tá** no hospi**tal**.",
+        "source": "[Er] ist im Krankenhaus.",
+        "audio": "lesson003_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Sa**be a que **ho**ras é a con**sul**ta?",
+        "source": "Wissen [Sie] um wieviel Uhr (Stunden) die Sprechstunde ist?",
+        "audio": "lesson003_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Ás** qu**a**tro **ho**ras.",
+        "source": "Um vier Uhr.",
+        "audio": "lesson003_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Que **ho**ras são a**go**ra, por fa**vor**?",
+        "source": "[Wie spät ist es] (welche Stunden sind) jetzt, bitte?",
+        "audio": "lesson003_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "É uma **ho**ra.",
+        "source": "[Es] ist ein Uhr.",
+        "audio": "lesson003_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E o hospi**tal** fica **per**to?",
+        "source": "Und befindet [sich] das Krankenhaus in der Nähe (nah)?",
+        "audio": "lesson003_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Não**, **fi**ca **mui**to **lon**ge.",
+        "source": "Nein, [es] ist (befindet) sehr weit [entfernt].",
+        "audio": "lesson003_dialogue_09"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Ah**, ent**ão** não **te**nho **mui**to **tem**po.",
+        "source": "Ah, dann habe [ich] nicht (nicht habe) viel Zeit.",
+        "audio": "lesson003_dialogue_10"
+    }]
+}

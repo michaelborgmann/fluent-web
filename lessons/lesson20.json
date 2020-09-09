@@ -1,0 +1,57 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648277/fluent/portuguese_course-lesson_20-bom_dia.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Bom-dia",
+        "source": "Guten Morgen"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Bom-**di**a, **pá**!",
+        "source": "Guten Morgen, [mein Lieber]!"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Bom-dia **não**: boa-**tar**de! Já é meio-**di**a. Chegas atra**sa**do como de cos**tu**me.",
+        "source": "Nicht guten Morgen: guten Tag (Nachmittag)± Es ist schon Mittag. Du kommst spät (verspätet) wie üblich."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Desculpa o a**tra**so, mas ultima**men**te não durmo **bem**. Tenho in**só**nias e adormeço tarde. De**pois**, é **cla**ro, acordo também **tar**de. A ti não te acon**te**ce a **mes**ma **coi**sa?",
+        "source": "Entschuldige die Verspätung, aber in letzter Zeit schlafe ich nicht gut. Ich habe Schlafstörungen (Schlaflosigkeit) und schlafe spät ein. Danach, [das] ist klar, wache ich auch spät auf. Passiert dir (bei dir) nicht das gleiche (die gleiche Sache)?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "A mim **não**. Deito-me **ce**do, por volta das **dez**, e levanto-me de madru**ga**da. Às seis da ma**nhã** ja estou de **pé** a fazer a **bar**ba.",
+        "source": "Mir (bei mir) nicht. Ich lege mich früh, gegen zehn, hin (um die zehn) und ich stehe (mich) beim Morgengrauen auf. Um sechs in der Früh (des Morgens) bin ich schon auf (auf Fuß) [und] beim Rasieren (den Bart machen.)"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Que **sor**te! Bem, vou tomar o pequeno al**mo**ço. Estou cheio de **fo**me.",
+        "source": "Was für ein Glück! Gut, ich werde (gehe) frühstücken (das Frühstück einnehmen). Ich bin sehr hungrig (voll von Hunger)."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "A esta **ho**ra! A**ssim** perdes o ape**ti**te para o al**mo**ço.",
+        "source": "Zu dieser Zeit (Stunde)! So verlierst du den Appetit auf das Mittagessen."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Quase nunca al**mo**ço. So **jan**to.",
+        "source": "Ich esse fast nie zu Mittag. Ich esse nur Abend."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Tens um ho**rá**rio muito esqui**si**to. Por que é que não te em**pre**gas como guarda-noc**tur**no?",
+        "source": "Du hast einen sehr komischen Zeitplan. Warum [suchst du dir] nicht eine Arbeit (stellst du dich nicht ein) als Nachtwächter?"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E **tu**? Por que é que não tra**ba**lhas como mulher a **di**as?",
+        "source": "Und du? Warum arbeitest du nicht als Putzfrau (Tagesfrau)?"
+    }]
+}

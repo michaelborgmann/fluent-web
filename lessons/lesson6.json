@@ -1,0 +1,85 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648280/fluent/portuguese_course-lesson_6-a_consulta_cont.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "A con**sul**ta (continua**ção**)",
+        "source": "Die Sprechstundej (Fortsetzung)",
+        "audio": "lesson006_dialogue_00"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Não**, não é nada **di**sso.",
+        "source": "Nein, [es] ist nichts (nicht ist nichts) davon.",
+        "audio": "lesson006_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "É que o senh**or** tem o**re**lhas muito com**pri**das.",
+        "source": "[Es] ist [so], daß Sie (der Herr) sehr lange Ohren (Ohren sehr lange) haben (hat)",
+        "audio": "lesson006_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Ah, **sim**…",
+        "source": "Ah, ja…",
+        "audio": "lesson006_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "E **co**me **bem**?",
+        "source": "Und Sie essen gut?",
+        "audio": "lesson006_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Sim**, **co**mo. Principal**men**te ce**nou**ras. Gosto **mui**to de ce**nou**ras.",
+        "source": "Ja, ich esse [gut]. Vor allem Karotten. Ich mag Karotten sehr (mag sehr.)",
+        "audio": "lesson006_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "E não **co**me **car**ne?",
+        "source": "Und Sie essen kein (nicht essen) Fleisch?",
+        "audio": "lesson006_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Não**, não **go**sto de **car**ne.",
+        "source": "Nein, ich mag kein (nicht mag) Fleisch.",
+        "audio": "lesson006_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "E **go**sta de **pei**xe?",
+        "source": "Und mögen Sie Fisch?",
+        "audio": "lesson006_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Não**, também não **go**sto de **pei**xe.",
+        "source": "Nein, ich mag auch keinen (auch nicht mag) Fisch.",
+        "audio": "lesson006_dialogue_09"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "O se**nhor** com o seu nome e os seus **gos**tos não precisa de um **mé**dico.",
+        "source": "Sie (Der Herr), mit (dem) Ihrem Namen und (dem) Ihrem Geschmack (Geschmäcker), brauchen keinen (nicht braucht einen) Arzt.",
+        "audio": "lesson006_dialogue_10"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Ah, **não**…?",
+        "source": "Ah, nein…?",
+        "audio": "lesson006_dialogue_11"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Não**. O que o se**nhor** pre**ci**sa é de um veteri**ná**rio.",
+        "source": "Nein. Was Sie brauchen (der Herr braucht) ist ein Tierarzt.",
+        "audio": "lesson006_dialogue_12"
+    }]
+}

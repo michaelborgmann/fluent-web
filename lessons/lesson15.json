@@ -1,0 +1,57 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648279/fluent/portuguese_course-lesson_15-uma_carta_dificil.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Uma carta difícil",
+        "source": "Ein schwieriger Brief"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "O que **é** que estás a fa**zer**, João?",
+        "source": "Was machst du gerade, João?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Estou a escre**ver** uma **car**ta à Ma**ri**a. Há já muito **tem**po que não tenho no**tí**cias dela.",
+        "source": "Ich schreibe Maria gerade einen Brief. [Es] ist (es gibt) lange her (viel Zeit), daß ich keine Nachricht (Nachrichten) von ihr [erhalten] habe."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Onde **é** que ela **vi**ve?",
+        "source": "Wo lebt sie?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "No Bra**sil**, em case de um **ti**o.",
+        "source": "In (im) Brasilien, bei (in Haus von) einem Onkel."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Mas po que **é** que estás a fa**zer** essas ca**re**tas?",
+        "source": "Aber warum machst du gerade [jetzt] solche (diese da) Grimassen?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Para me concen**trar** e tentar fa**zer** uma letra bo**ni**ta. Senão **e**la não compreende **na**da.",
+        "source": "Um mich [zu] konzentrieren und [zu] versuchen, schön zu schreiben (einen schönen Buchstaben zu machen). Sonst versteht sie nichts."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Então o me**lhor** é escrever-lhe à **má**quina. A tua **le**tra é, de **fa**cto, muito **fe**ia.",
+        "source": "Dann ist [es] das Beste, ihr mit der Maschine [zu] schreiben. Deine Schrift ist in der Tat sehr häßlich."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Não faz **mal. Assim **e**la vai perceber **lo**go que sou **e**u… A pro**pó**sito, tens um **se**lo?",
+        "source": "[Das] macht nichts (schlecht). So wird sie sofort wissen (verstehen), daß ich [es] bin… Hast du übrigens eine Briefmarke?"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Não**, mas tenho uma b**o**a i**dei**a: por que **é** que não a **vais** visi**tar**?",
+        "source": "Nein, aber ich habe ein gute Idee: warum besuchst du sie nicht (gehst du nicht sie besuchen)?"
+    }]
+}

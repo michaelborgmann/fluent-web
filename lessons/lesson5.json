@@ -1,0 +1,73 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648280/fluent/portuguese_course-lesson_5-a_consulta.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "A con**sul**ta",
+        "source": "Die Sprechstunde",
+        "audio": "lesson005_dialogue_00"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Boa **ta**rde, sehnhor dou**tor**.",
+        "source": "Guten Tag (Nachmittag), Herr Doktor.",
+        "audio": "lesson005_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Boa **tar**de. Faz fa**vor** de se sen**tar**.",
+        "source": "Guten Tag. Bitte setzen [Sie] sich (tun Sie den Gefallen, sich hinsetzen).",
+        "audio": "lesson005_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Obri**ga**do.",
+        "source": "Danke.",
+        "audio": "lesson005_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "É a primeira **vez** que vem à con**sul**ta?",
+        "source": "Ist [es] das erste Mal, daß [Sie] zur Sprechstunde kommen (daß kommen zur Sprechstunde)?",
+        "audio": "lesson005_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "É, **sim**.",
+        "source": "Ja (ist, ja).",
+        "audio": "lesson005_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Qual é seu **no**me, por fa**vor**?",
+        "source": "[Wie] (welcher) ist Ihr (der Ihr) Name, bitte?",
+        "audio": "lesson005_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Cha**mo-me José Co**el**ho.",
+        "source": "[Ich] heiße (nenne mich) José Coelho.",
+        "audio": "lesson005_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "E de que **é** que se **quei**xa?",
+        "source": "Und welche Beschwerden haben Sie (über was ist es, daß Sie sich beschweren)?",
+        "audio": "lesson005_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Bem**, sinto-me do**en**te. Sempre que **po**nho o **me**u cha**péu** **te**nho **do**res de ca**be**ça.",
+        "source": "Na ja (gut), [ich] fühle mich krank. Immer wenn [ich] meinen (den meinen) Hut aufsetze, habe [ich] Kopfschmerzen.",
+        "audio": "lesson005_dialogue_09"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Tal**vez** ti**ran**do o cha**péu**…",
+        "source": "Vielleicht [wenn Sie] den Hut abnehmen (den Hut abnehmend)…",
+        "audio": "lesson005_dialogue_10"
+    }]
+}

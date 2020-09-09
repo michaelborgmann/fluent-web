@@ -1,0 +1,67 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648278/fluent/portuguese_course-lesson_9-um_encontro.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Um encontro",
+        "source": "Ein Rendezvous",
+        "audio": "lesson009_dialogue_00"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Ol**á**! En**tão** come é que **vais**?",
+        "source": "Hallo! Wie geht es dir denn (wie ist es, wie es dir geht)?",
+        "audio": "lesson009_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Bem**, obri**ga**da. E vocês, que **fa**zem?",
+        "source": "Gut, danke. Und ihr, was macht ihr?",
+        "audio": "lesson009_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Eu** es**tou** a traba**lhar** numa es**co**la e o An**tó**nio vai fa**zer** um **fil**me.",
+        "source": "Ich arbeite gerade (bin beim Arbeiten) in einer Schule und (der) Antonio wird einen Film machen (geht machen einen Film).",
+        "audio": "lesson009_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Um **fil**me? Que **bom**! **So**bre **quê**?",
+        "source": "Einen Film? Wie schön (gut)! Über was?",
+        "audio": "lesson009_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Sobre Portu**gal**. Vai par**tir** para Lis**bo**a na **pró**xima se**ma**na.",
+        "source": "Über Portugal!. Er wird nächste Woche (in der nächsten Woche) nach Lissabon fahren.",
+        "audio": "lesson009_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "E qu**an**to tempo de**mo**ram as fil**ma**gens?",
+        "source": "Und wie lange (wieviel) Zeit dauern die Aufnahmen?",
+        "audio": "lesson009_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Ce**rca de três **me**ses.",
+        "source": "Zirka drei Monate.",
+        "audio": "lesson009_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "E **tu** não **par**tes tam**bém**?",
+        "source": "Und du, fährst du (nicht) auch [mit]?",
+        "audio": "lesson009_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "A**go**ra é impo**ssí**vel, por cause das **au**las. Mas **par**to no **pró**ximo **mês**. Tenho **fé**rias.",
+        "source": "Jetzt ist [es] unmöglich, wegen des Unterrichts (aufgrund der Unterrichtsstunden). Aber ich fahre (in dem) nächsten Monat. Ich habe Ferien.",
+        "audio": "lesson009_dialogue_09"
+    }]
+}

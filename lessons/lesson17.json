@@ -1,0 +1,77 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648279/fluent/portuguese_course-lesson_17-o_correio.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Os dias da semana",
+        "source": "Die Wochentage"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Segunda-**fei**ra, terça-**fei**ra, quarta-**fei**ra, quinta-**fei**ra, sexta-**fei**ra, **sá**bado e do**min**go.",
+        "source": "Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag, Sonntag."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Uma se**ma**na tem sete **di**as. Traba**lha**mos todos os **di**as menos aos **sá**bados e do**min**gos.",
+        "source": "Eine Woche hat sieben Tage. Wir arbeiten jeden Tag (alle Tage) außer (weniger) Samstag und Sonntag."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "O que **é** que se faz habitua**ment**te durante o fim de se**ma**na?",
+        "source": "Was macht man normalerweise wahrend des Wochenendes (Ende der Woche)?"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Des**can**sa-se.",
+        "source": "Man ruht sich aus."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "E que **di**a é **ho**je?",
+        "source": "Und was für ein Tag ist heute?"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Infeliz**men**te hoje é segunda-**fei**ra.",
+        "source": "Leier ist heute Montag."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Em que dia é o Na**tal**?",
+        "source": "An (in) welchem Tag ist (das) Weihnachten?"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "No dia vinte e **cin**co de De**zem**bro.",
+        "source": "Am fünfundzwanzigsten (im Tag fünfundzwanzig von) Dezember."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "E quantas esta**ções** tem o **a**no?",
+        "source": "Und wieviele Jahreszeiten hat das Jahr?"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "O **a**no tem quatro esta**ções**: Prima**ve**ra, Ve**rão**, Ou**to**no e In**ver**no.",
+        "source": "Das Jahr hat vier Jahreszeiten: Frühling, Sommer, Herbst und Winter."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Em que esta**ção** é que você costuma ter **fé**rias?",
+        "source": "In welcher (in was für einer) jahreszeit [machen] (haben) Sie [gewöhnlich] Urlaub (Ferien)?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "No Ve**rão**.",
+        "source": "Im Sommer."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E para **on**de costuma ir no Ve**rão**? Para a **pra**ia ou para o **cam**po?",
+        "source": "Und wo fahren Sie [gewöhnlich] im Sommer hin? An den (nach) Strand oder auf's (nach) Land?"
+    }]
+}

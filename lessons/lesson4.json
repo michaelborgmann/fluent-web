@@ -1,0 +1,73 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648280/fluent/portuguese_course-lesson_4-o_transito.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "O **trân**sito",
+        "source": "Der Verkehr",
+        "audio": "lesson004_dialogue_00"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Por que **é** que o se**nhor** não toma um **tá**xi?",
+        "source": "Warum nehmen Sie kein (ist es, daß der Herr nicht nimmt ein) Taxi?",
+        "audio": "lesson004_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**É** di**fí**cil arranjar um **tá**xi agora. **Há** muita **gen**te à es**pe**ra.",
+        "source": "[Es] ist schwierig, jetzt ein Taxi [zu] bekommen (bekommen ein Taxi jetzt). [Es] gibt viele Leute, [die] (beim) warten.",
+        "audio": "lesson004_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**É** ver**da**de, **há** muito movi**men**to. **É** a **ho**ra de **pon**ta.",
+        "source": "[Es] is wahr (Wahrheit), [es] gibt viel Verkehr. [Es] ist Hauptverkehrszeit.",
+        "audio": "lesson004_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "O **trân**sito es**tá** ter**rí**vel. Não **sei** que fa**zer**.",
+        "source": "Der Verkehr ist furchtbar. [Ich] weiß nicht, was [ich] tun [soll]",
+        "audio": "lesson004_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Porque não **vai** de **me**tro?",
+        "source": "Warum fahren [Sie] nicht (nicht fahren) mit der U-Bahn?",
+        "audio": "lesson004_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Não **go**sto de andar de **me**tro. Não **há** e**léc**tricos?",
+        "source": "[Ich] mag nicht (nicht mag) mit der U-Bahn fahren (gehen). Gibt [es] nicht (nicht gibt) [eine] Straßenbahn (Straßenbahnen)?",
+        "audio": "lesson004_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Não**, não **há**.",
+        "source": "Nein, [es] gibt keine (nicht).",
+        "audio": "lesson004_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E auto**ca**rros?",
+        "source": "Und Busse?",
+        "audio": "lesson004_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Tam**bém** não.",
+        "source": "Auch nicht.",
+        "audio": "lesson004_dialogue_09"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "En**tão**, vou a **pé**.",
+        "source": "Dann gehe [ich] zu Fuß.",
+        "audio": "lesson004_dialogue_10"
+    }]
+}

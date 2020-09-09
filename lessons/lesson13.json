@@ -1,0 +1,61 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648281/fluent/portuguese_course-lesson_13-boa_viagem.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Boa viagem!",
+        "source": "Gute Reise!",
+        "audio": "lesson013_dialogue_00"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Que lindo **di**a para via**jar**, não **a**cha?",
+        "source": "Was für ein schöner Tag zu reisen, finden Sie nicht?",
+        "audio": "lesson013_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Sim**, de **fac**to. **Mas**, para lhe dizer a ver**da**de, prefiro tomar o com**bo**io nos dias de **chu**va.",
+        "source": "Ja, in der Tag. Aber um Ihnen die Wahrheit zu sagen ich bevorzuge an regnerischen Tagen den Zug zu nehmen (in regnerischen Tagen nehmen den Zug).",
+        "audio": "lesson013_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Ah, **sim**! E come é que vi**a**ja quando está **sol**?",
+        "source": "Ach, ja! Und wie reisen Sie, wenn die Sonne scheint (ist)?",
+        "audio": "lesson013_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "De **ca**rro ou a **pé**. Posso parar quando **que**ro e apreciar a pai**sa**gem à von**ta**de.",
+        "source": "Mit dem Auto oder zu Fuß. Ich kann halten, wann ich will und die Landschaft nach Belieben genießen.",
+        "audio": "lesson013_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E no **ca**so de ter **pre**ssa. Um negócio ur**gen**te, por e**xem**plo?…",
+        "source": "Und falls Sie [es] eilig haben (im Falle, Eile zu haben)? Ein dringendes Geschäft zum Beispiel?",
+        "audio": "lesson013_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Nunca tehno **pre**ssa. A **vi**da merece ser vi**vi**da calma**men**te e, como possuo di**nhei**ro suficiente, posso **dar**-me a esse **lu**xo.",
+        "source": "Ich habe [es] nie eilig (nie habe ich Eile). Das Leben ist es wert (verdient), in Ruhe (ruhigerweise) gelebt zu werden, und da ich genügend Geld besitze, kann ich mir diesen Luxus leisten (geben).",
+        "audio": "lesson013_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Que rica **vi**da! Mas se o se**nhor** é assim tão **ri**co por que **é** não **to**ma o avi**ão** em vez do com**bo**io?",
+        "source": "Was für ein schönens (reiches) Leben! Aber wenn Sie so reich sind (der Herr ist so reich), warum nehmen Sie nicht (der Herr nicht nimmt) das Flugzeug anstatt des Zuges?",
+        "audio": "lesson013_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Porque tenho **me**do.",
+        "source": "Weil ich Angst habe.",
+        "audio": "lesson013_dialogue_08"
+    }]
+}

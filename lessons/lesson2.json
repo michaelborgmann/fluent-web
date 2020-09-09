@@ -1,0 +1,97 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648281/fluent/portuguese_course-lesson_2-em_lisboa.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Em Lis**boa**",
+        "source": "In Lissabon",
+        "audio": "lesson002_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Des**cul**pe, **on**de **mo**ra o profe**ssor**?",
+        "source": "Entschuldigen [Sie], wo wohnt der Lehrer?",
+        "audio": "lesson002_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "O profe**ssor** **mo**ra na **ru**a do **Ou**ro.",
+        "source": "Der Lehrer wohnt in der rua do Ouro (Straße des Goldes).",
+        "audio": "lesson002_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**On**de **é** a **ru**a do **Ou**ro?",
+        "source": "Wo ist die rua do Ouro?",
+        "audio": "lesson002_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "A **ru**a do **Ou**ro **é** **na** **Bai**xa.",
+        "source": "Die rua do Ouro ist in der Baixa (\"Untere\"/Innenstadt).",
+        "audio": "lesson002_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "O que **é** a **Bai**xa?",
+        "source": "Was ist die Baixa (\"Untere\")?",
+        "audio": "lesson002_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "É **u**ma **par**te de Lis**bo**a, **per**to do **ri**o.",
+        "source": "[Es] ist ein Teil von Lissabon, nah am (vom) Fluß.",
+        "audio": "lesson002_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Qu**al** **é** o **ri**o de Lis**bo**a",
+        "source": "Welcher Fluß ist in Lissabon? (Welch[er] ist der Fluß von Lissabon?)",
+        "audio": "lesson002_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "É o **Te**jo",
+        "source": "[Es] ist der Tejo.",
+        "audio": "lesson002_dialogue_09"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "As **ru**as da **Bai**xa **são** mod**er**nas?",
+        "source": "[Sind] die Straßen von der Baixa modern? (Die Straßen von der Baixa sind modern?)",
+        "audio": "lesson002_dialogue_10"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Não**, são an**ti**gas.",
+        "source": "Nein, [sie] sind alt.",
+        "audio": "lesson002_dialogue_11"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Co**mo **é** a **ca**sa do profe**ssor**?",
+        "source": "Wie ist das Haus des Lehreres?",
+        "audio": "lesson002_dialogue_12"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**É** an**ti**ga, mas **é** bo**ni**ta.",
+        "source": "[Es] ist alt, aber schön. (Ist alt, aber ist schön.)",
+        "audio": "lesson002_dialogue_13"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E o se**nhor**, **on**de **mo**ra?",
+        "source": "Und Sie (der Herr), wo wohnen (wohnt) [Sie]?",
+        "audio": "lesson002_dialogue_14"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Eu **mo**ro no **Bai**rro **Al**to.",
+        "source": "Ich wohne im Bairro Alto (Stadtteil Hoch).",
+        "audio": "lesson002_dialogue_15"
+    }]
+}

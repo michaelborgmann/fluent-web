@@ -1,0 +1,97 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648279/fluent/portuguese_course-lesson_10-a_partida.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "A partida",
+        "source": "Die Abreise",
+        "audio": "lesson010_dialogue_00"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Po**sso ent**rar**?",
+        "source": "Darf ich eintreten?",
+        "audio": "lesson010_dialogue_01"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Po**des, **cla**ro.",
+        "source": "Du darst, natürlich (klar).",
+        "audio": "lesson010_dialogue_02"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "O que é que es**tás** a fa**zer**?",
+        "source": "Was macht du gerade?",
+        "audio": "lesson010_dialogue_03"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Estou a fazer a **ma**la. Mas não é **fá**cil.",
+        "source": "Ich packe (mache gerade) meinen (den) Koffer.",
+        "audio": "lesson010_dialogue_04"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Por**qué**? Tens muita **coi**sa?",
+        "source": "Warum? Hast du (du hast) viele Sachen (viel Sache)?",
+        "audio": "lesson010_dialogue_05"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Te**nho, e a minha **ma**la é pe**que**na.",
+        "source": "Ja (habe) und (der) mein Koffer ist klein.",
+        "audio": "lesson010_dialogue_06"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Pois **é**. Onde **le**vas o teu cha**péu**?",
+        "source": "Tatsächlich. Wohin tust du (nimmst du mit) deinen (den) Hut?",
+        "audio": "lesson010_dialogue_07"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "O meu cha**péu**? Na ca**be**ça.",
+        "source": "Meinen (den) Hut? [Ich setze ihn] auf den Kopf (im Kopf).",
+        "audio": "lesson010_dialogue_08"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E a tua gabar**di**na?",
+        "source": "Und deinen (den) Regenmantel?",
+        "audio": "lesson010_dialogue_09"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "No **bra**ço…",
+        "source": "Über den (im) Arm.",
+        "audio": "lesson010_dialogue_10"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E como **é** que levas a **pas**ta com os teus docum**en**tos?",
+        "source": "Und wo trägst du (wie nimmst du mit) die Mappe mit den Dokumenten?",
+        "audio": "lesson010_dialogue_11"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Na **mão**.",
+        "source": "In der Hand.",
+        "audio": "lesson010_dialogue_12"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "**Po**sso aju**dar**-te?",
+        "source": "Darf ich dir helfen?",
+        "audio": "lesson010_dialogue_13"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Já que in**sis**tes levas a **ma**la.",
+        "source": "Wenn du schon darauf bestehst, nimm (du nimmst) den Koffer.",
+        "audio": "lesson010_dialogue_14"
+    }]
+}

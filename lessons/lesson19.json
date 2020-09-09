@@ -1,0 +1,52 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648280/fluent/portuguese_course-lesson_19-no_campo.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "No campo",
+        "source": "Auf dem (im) Lande"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Es**tou** a tremer de **fri**o e, ainda por **ci**ma, as nuvens não **dei**xam pa**ssar** nenhum **rai**o de **sol**.",
+        "source": "Ich zittere vor Kälte und obendrein lassen die Wolken keinen Sonnenstrahl durch."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Eu é o con**trá**rio: estou a su**ar**. O que eu pre**ci**so é de **som**bra.",
+        "source": "Bei mir (ich) ist es das Gegenteil: ich schwitze. Was ich brauche, ist (von) Schatten."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Mas **tu** nunca estás qui**e**to. Sempre a me**xer** e, ainda por **ci**ma, vestido como um **ur**so.",
+        "source": "Aber du bist nie ruhig. Immer in Bewegung (beim Bewegen) und noch dazu angezogen wie ein Eskimo (ein Bär)."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Es**que**ces que não estou a**qui** para passar **fé**rias, mas para perder **pe**so. Estou demasiado **go**rdo e preciso de emagre**cer**.",
+        "source": "Du vergißt, daß ich nicht hier bin, um Urlaub [zu] machen (verbringen), sondern (aber) um Gewicht [zu] verlieren. Ich bin zu dick und habe es nötig abzunehmen (brauch abnehmen)."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "En**tão** porque é que não **pá**ras de co**mer**? Fazes tal ba**ru**lho a masti**gar** que metes medo aos **pá**ssaros.",
+        "source": "Warum hörst du dann nicht auf zu essen? Du machst solch einen Krach beim Kauen, daß du den Vögeln Angst machst."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "O que tu **ten**s é in**ve**ja. Inveja da minha ele**gân**cia fu**tu**ra. Não per**ce**bes que comer folhas de **ár**vore e respirar este ar **pu**ro faz **pa**rte da minha di**e**ta. Não podes compreender os meus scri**fí**cios porque és **ma**gra.",
+        "source": "Was du hast, ist Neid. Neid auf meine zukünftige Eleganz. Du verstehst nicht, daß das Essn (essen) von Blättern der Bäume und das Atemen (atmen) dieser frischen (reinen) Luft Teil meiner Diät ist (macht). Du kannst meine Opfer ncht verstehen, weil du schlank bist."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "E a co**mi**da que comes às escon**di**das? Os **bi**fes com batatas **fri**tas que devoras quando a**cor**das?",
+        "source": "Und das Essen, das du heimlich zu dir nimmst (ißt)? Die Steaks mit Pommes frites, die du hinunterschlingst, wenn du aufstehst (aufwachst)?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Isso é para me **dar** ener**gi**a.",
+        "source": "Das ist [nur], damit ich Energie [bekomme] (um mir Energie zu geben)."
+    }]
+}

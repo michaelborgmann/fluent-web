@@ -1,0 +1,62 @@
+{
+    "targetLanguage": "portugal",
+    "sourceLanguage": "germany",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648285/fluent/portuguese_course-lesson_16-uma_carta_dificil.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "O correio",
+        "source": "Die Post"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Ma**ri**a! O carteiro tem uma **car**ta para **si**.",
+        "source": "Maria! Der Postbote hat einen Brief für dich (Sie)!"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "**Ah!** obri**ga**da. É uma **car**ta de Portu**gal.",
+        "source": "Ah, danke! [Es] ist ein Brief aus Portugal."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Quem **é** que le es**cre**ve?",
+        "source": "Wer schreibt dir (wer ist es, der dir schreibt)?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Não **sei**, **ti**o. Não consigo perceber a **le**tra. Nem sequer a assina**tu**ra.",
+        "source": "Ich weiß [es] nicht, Onkel. Ich schaffe [es] nicht, die Schrift [zu] entziffern (verstehen). Nicht einmal die Unterschrift."
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Que raio de ma**ni**a: escrever **car**tas que ninguém en**ten*de! Já são três cartas a**ssim** que você re**ce**be esta se**ma**na.",
+        "source": "Was für eine blöde Angewohnheit Briefe zu schreiben, die niemand entziffern kann (versteht). Drei solche Briefe hast du diese Woche schon bekommen."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Pois **são**. Mas **pen**so que deve ser o An**tó**nio. Ou o meu primo Manu**el**. Ou o João. Ou, então, o…",
+        "source": "Tatsächlich (sind). Aber ich denke, das wird Antonio sein (muß der Antonio sein). Oder mein Cousin Manuel. Oder (der) João. Oder, dann, der…"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Como não tem a cer**te**za, a solução é escre**ver** a toda essa **gen**te para agrade**cer** um tal dispa**ra**te.",
+        "source": "Da du nicht sicher bist (die Sicherheit nicht hast), [gibt es nur] (ist) die Lösung, allen diesen Leuten [zu] schreiben, um [ihnen für] solchen Unsinn [zu] danken."
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Que **óp**tima i**dei**a! Uma só **car**ta para todos **e**les. De**pois**, basta fazer foto**có**pias. Que a**lí**vio!",
+        "source": "Was für [eine] tolle (optimale) Idee! Ein einziger (nur) Brief für alle (alle sie). Anschließend genügt [es], Fotokopien zu machen. Was für eine Erleichterung!"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "Onde é que você **vai** com tanta **pre**ssa?",
+        "source": "Wo gehst du so eilig hin (mit soviel Eile)?"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "Vou aos Co**rre**ios comprar um quilo de **se**los.",
+        "source": "Ich gehe zur Post. [um] ein Kilo Briefmarken [zu] kaufen."
+    }]
+}
