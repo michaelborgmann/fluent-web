@@ -27,9 +27,11 @@ const createLesson = function (req, res) {
   LessonModel.create({
     title: req.body.title,
     translation: req.body.translation,
-    imageURL: req.body.imageURL,
-    //dialogue: req.body.dialogue
+    imageURL: {
+      cloudinary: req.body.cloudinary,
+    }
   }, (err, lesson) => {
+
     if (err) {
       res
         .status(400)
@@ -44,7 +46,83 @@ const createLesson = function (req, res) {
   });
 };
 
+const getLessonImageUrl = function (req, res) {
+
+  LessonModel
+    .findById(req.params.lessonid)
+    .select('imageURL')
+    .exec((err, lesson) => {
+
+      if (!lesson) {
+        return res
+          .status(404)
+          .json({
+            "message": "lesson not found"
+          });
+
+      } else if (err) {
+        return res
+          .status(404)
+          .json(err);
+      }
+
+      res
+        .status(200)
+        .json(lesson.imageURL.cloudinary)
+
+    });
+};
+
+const updateLessonImageUrl = function (req, res) {
+
+  if (!req.params.lessonid) {
+    res
+    .status(404)
+    .json({"message": "Not found, lessonid is required"});
+  }
+
+  LessonModel
+    .findById(req.params.lessonid)
+    .exec((err, lesson) => {
+
+      if (!lesson) {
+        res
+          .json(404)
+          .status({"message": "lessonid not found"});
+      } else if (err) {
+        res
+          .status(400)
+          .json(err)
+      }
+
+      lesson.update({ imageURL: { cloudinary: req.body.cloudinary }}, (err, result) => {
+        
+      });
+
+      console.log(lesson.imageURL);
+
+      lesson.save((err, lesson) => {
+
+        if (err) {
+          res
+            .status(404)
+            .json(err)
+
+        } else {
+          res
+            .status(200)
+            .json(lesson)
+        }
+
+      });
+
+    });
+
+}
+
 module.exports = {
   getAllLessons,
-  createLesson
+  createLesson,
+  getLessonImageUrl,
+  updateLessonImageUrl
 };

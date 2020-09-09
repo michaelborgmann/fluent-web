@@ -30,6 +30,11 @@ const dialogueSchema = new mongoose.Schema({
   messages: [messageSchema]
 });
 
+const imageSchema = new mongoose.Schema({
+  cloudinary: String,
+  s3: String
+},{ _id : false });
+
 const lessonSchema = new mongoose.Schema({
   title: {
     type: String,
@@ -39,7 +44,7 @@ const lessonSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  imageURL: String,
+  imageURL: imageSchema,
   dialogue: [{ type: mongoose.Schema.Types.ObjectId, ref: "Dialogue"}]
 });
 

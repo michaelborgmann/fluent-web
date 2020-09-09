@@ -12,6 +12,11 @@ router
   .get(lessonsController.getAllLessons)
   .post(lessonsController.createLesson);
 
+router
+  .route('/lessons/:lessonid/imageURL')
+  .get(lessonsController.getLessonImageUrl)
+  .put(lessonsController.updateLessonImageUrl);
+
 // dialogues
 router
   .route('/dialogues/:lessonid')
