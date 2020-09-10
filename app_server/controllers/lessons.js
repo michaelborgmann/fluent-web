@@ -56,7 +56,7 @@ const renderLessonForm = (req, res) => {
 };
 
 const createLesson = (req, res) => {
-  renderReviewForm(req, res);
+  renderLessonForm(req, res);
 }
 
 const addLesson = (req, res) => {
