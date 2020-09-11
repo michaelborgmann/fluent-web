@@ -14,13 +14,19 @@
         "sender": "user",
         "target": "Des**cul**pe, **on**de **mo**ra o profe**ssor**?",
         "source": "Entschuldigen [Sie], wo wohnt der Lehrer?",
-        "audio": "lesson002_dialogue_02"
+        "audio": "lesson002_dialogue_02",
+        "notes": [
+          "*Onde mora o professor?* = wo wohnt der Lehrer? - *Mora na rua do Ouro* = er wohnt in der *rua do Ouro*. Erinnern Sie sich daran, daß das Personalpronomen (Subject) oft weggelassen wird. *Onde mora a senhora?* = wo wohnen Sie (meine Dame)? - *Moro na rua da Prata* (da **pra**ta) = ich wohne in der *rua da Prata* (Straße des Silbers). *Onde mora?* = wo wohnen Sie? - *Moro na rua da Prata*. Also dann: *(eu) moro* > 1. Person; *(ela/ela/você/o sehnor/a senhora) mora* > 3. Person Singular."
+        ]
     }, {
         "type": "message",
         "sender": "other",
         "target": "O profe**ssor** **mo**ra na **ru**a do **Ou**ro.",
         "source": "Der Lehrer wohnt in der rua do Ouro (Straße des Goldes).",
-        "audio": "lesson002_dialogue_03"
+        "audio": "lesson002_dialogue_03",
+        "notes": [
+          "*Em Lisboa: em* (eing) = in, auf oder über, kann sich mit *o/a/os/as* verschmelzen. *Na rua do Ouro* = in der *rua do Ouro*. *Na* ist die Verschmelzung von *em* + *a*. *Em* + *a* rua = *na rua* (in der Straße). *A casa na Baixa* = das Haus in der Baixa. *Moro no Bairro Alto* = ich wohne im *Bairro Alto* (*em* + *o Bairro* = *no Bairro*)."
+        ]
     }, {
         "type": "message",
         "sender": "user",
@@ -38,7 +44,10 @@
         "sender": "user",
         "target": "O que **é** a **Bai**xa?",
         "source": "Was ist die Baixa (\"Untere\")?",
-        "audio": "lesson002_dialogue_06"
+        "audio": "lesson002_dialogue_06",
+        "notes": [
+          "*O que é?* = was ist? wird meistens benutzt, um etwas zu erfragen, dessen Wesen man nicht kennt. Ein anderes Beispiel: *O que procura?* (u ke pro*ku*ra?) = Was suchen Sie? Merken Sie sich, daß es auf Portugiesisch reicht, nach der Bejahungsform nur ein Fragezeichen zu setzen, damit der Satz sich in eine Frage verwandelt."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -50,7 +59,10 @@
         "sender": "user",
         "target": "Qu**al** **é** o **ri**o de Lis**bo**a",
         "source": "Welcher Fluß ist in Lissabon? (Welch[er] ist der Fluß von Lissabon?)",
-        "audio": "lesson002_dialogue_08"
+        "audio": "lesson002_dialogue_08",
+        "notes": [
+          "*Qual é o rio Lisboa? - E o Tejo. Qual é a capital de Portugal? E Lisboa.* Merken Sie sich: *Qual* (welch, -er, -e) hat die gleiche Form für maskulin (männlich) und feminin (weiblich)."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -62,7 +74,10 @@
         "sender": "user",
         "target": "As **ru**as da **Bai**xa **são** mod**er**nas?",
         "source": "[Sind] die Straßen von der Baixa modern? (Die Straßen von der Baixa sind modern?)",
-        "audio": "lesson002_dialogue_10"
+        "audio": "lesson002_dialogue_10",
+        "notes": [
+          "*A__s__ rua__s__ da Baixa __são__ moderna__s__.* - Achten Sie auf den Plural -__*s*__. Das __*s*__ am Ende eines Wortes ist normalerweise ein Zeichen für den Plural. Achten Sie ebenso auf deie Verbform \"__**são**__\" (3. Person Plural von *ser*): *A rua é moderna* - A__s__ rua__s__ __são__ moderna__s__. O rio é antigo - O__s__ rio__s__ __são__ antigo__s__."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -74,7 +89,10 @@
         "sender": "user",
         "target": "**Co**mo **é** a **ca**sa do profe**ssor**?",
         "source": "Wie ist das Haus des Lehreres?",
-        "audio": "lesson002_dialogue_12"
+        "audio": "lesson002_dialogue_12",
+        "notes": [
+          "*A casa do professor*: die Präposition *de* kann auch mit dem bestimmten Artikel *o/a/os/as* verschmelzen: *do* (du)/*da* (da)/*dos* (dusch)/*das* (dasch). *As ruas da Baixa* = die Straßen von der Baixa. *A casa do professor* = das Haus des Lehreres (Genetiv). *Perto do rio* = nah am Fluß (in der Nähe des Flusses/vom Fluß). Aber Achtung: Es gibt viele Fälle, in denen diese Präpositionen (*de* und *em* = Anmerkung 2) unverändert bleiben, wie die Mehrheit der Namen von Städten und einiger Länder, z.B.: *em Lisboa, em Portugal; de Lisboa, de Portugal*."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -92,6 +110,10 @@
         "sender": "other",
         "target": "Eu **mo**ro no **Bai**rro **Al**to.",
         "source": "Ich wohne im Bairro Alto (Stadtteil Hoch).",
-        "audio": "lesson002_dialogue_15"
+        "audio": "lesson002_dialogue_15",
+        "notes": [
+          "*Eu moro* = Ich wohne bzw. __Ich__, ich wohne. Normalerweise wird das Personalpronomen weggelassen, wie Sie schon gesehen haben. Erscheint es aber, dann kann das bedeuten, daß das Subjekt hervorgehoben werden soll (ich (selber), ich wohne), das heißt, die Betonung auf dem __ich__ wird in dem Fall so interpretiert: \"er [dagegen] wohnt in einem ganz anderen Stadtviertel\".",
+          "Die Diphthonge (Doppellaute) verdienen besondere Aufmerksamkeit. Einige Beispiele:\n-*ai- pai* (**pei**) = Vater, wie in \"bei, mein\", usw.\n-*ei- primeira* (prim**ej**ra) = erste, wie im engl. \"Okay\" (o.k.).\n-*oi- noite* (n**oj**te) = Nacht, ähnlich wie \"o je\".",
+        ]
     }]
 }
