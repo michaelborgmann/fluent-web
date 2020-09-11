@@ -20,13 +20,19 @@
         "sender": "other",
         "target": "Es**tá** no hospi**tal**.",
         "source": "[Er] ist im Krankenhaus.",
-        "audio": "lesson003_dialogue_03"
+        "audio": "lesson003_dialogue_03",
+        "notes": [
+          "*Onde está o médico - Está no hospital* = Wo ist der Artzt? - Er ist im Krankenhaus. *Estar* bedeutet \"sein\" aber es handelt sich immer um einen vorübergehenden Zustand. Vergleich *ser: ele é português* = er ist Portugiese > Dauerzustand! Ausnahme: - *Que horas são?* = Wie spät ist es? Das **h** am Anfang eines Wortes wird nie ausgesprochen: *hospi**ta**l* (oschpi**tal**)!"
+        ]
     }, {
         "type": "message",
         "sender": "user",
         "target": "**Sa**be a que **ho**ras é a con**sul**ta?",
         "source": "Wissen [Sie] um wieviel Uhr (Stunden) die Sprechstunde ist?",
-        "audio": "lesson003_dialogue_04"
+        "audio": "lesson003_dialogue_04",
+        "notes": [
+          "*Sabe*, Verb *saber* = wissen, können. *Sei falar português* = ich kann nicht Portugiesisch (weil ich die Sprache gelernt habe). Kurz, *saber* heißt, sich Wissen durch Lernen anzueignen."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -38,7 +44,11 @@
         "sender": "user",
         "target": "Que **ho**ras são a**go**ra, por fa**vor**?",
         "source": "[Wie spät ist es] (welche Stunden sind) jetzt, bitte?",
-        "audio": "lesson003_dialogue_06"
+        "audio": "lesson003_dialogue_06",
+        "notes": [
+          "*Que horas são* (ke **o**rasch **ßau**(**ng**)?), wörtlich: \"Welche Stunden sind [es]?\". In einer Frage steht *horas* immer im Plural. Die Antwort stimmt mit der bestimmten Zeit überein: *são duas, horas* (**ßau**(ng)) du**a**s**o**rasch) = es ist zwei Uhr, aber: *é uma hora* (**ä**uma**o**ra) = es ist ein Uhr. Kurz, das Verb bleibt Singular, weil die Zahl \"ein\" auch Singular ist. Weitere Beispiele: *São quatro horas** (ß**au**(**ng) ku**a**tru**o**rasch). Plural = es ist vier Uhr. *É meio dia* (**ä** **mej**u **di**a), wörtlich \"halber Tag\" = Es ist Mittag. *É meia noite* (ä meja **noj**te) = Es ist Mitternacht. *É uma e cinco* (**ä** **um**a i **ßi**(**ng**)ku) = Es ist fünf nach eins. *São duas e dez* (**ßau**(**ng**) **du**asi**dä**sch) = Es ist zehn nach zwei. *São quatro menos três minutos* (**ßau**(**g) ku**a**tru **mee**nusch **tree**sch mi**nu**tusch) = Es ist drei vor vier, *ou* (o) = oder: *faltam três minutos para as quatro (**fal*tau(ng) **tree**sch mi**nu**tusch pa**ra**sch ku**a**tru), wörtlich: \"Es fehlen drei Minuten bis vier\".",
+          "*Por favor (pur fa**wor**) = *se faz favor (ße **fa**sch fa**wor) = bitte, wörtlich: \"wenn macht Gefallen\", wird sehr oft benutzt, um jemanden anzusprechen, zu rufen, etwas anzubieten, usw."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -50,7 +60,10 @@
         "sender": "user",
         "target": "E o hospi**tal** fica **per**to?",
         "source": "Und befindet [sich] das Krankenhaus in der Nähe (nah)?",
-        "audio": "lesson003_dialogue_08"
+        "audio": "lesson003_dialogue_08",
+        "notes": [
+          "*Ficar* bedeutet \"sich befinden, liegen\", kann aber oft durch *ser* =(sein | Dauerzustand) ersetzt werden: *o histpital fica perto?* = *o hospital é perto?* = ist das Krankenhaus in der Nähe?; *onde fica Portugal? - Portugal fica na Europa* = wo befindet sich Portugal? - Portugal befindet sich in Europa."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -62,6 +75,9 @@
         "sender": "user",
         "target": "**Ah**, ent**ão** não **te**nho **mui**to **tem**po.",
         "source": "Ah, dann habe [ich] nicht (nicht habe) viel Zeit.",
-        "audio": "lesson003_dialogue_10"
+        "audio": "lesson003_dialogue_10",
+        "notes": [
+          "*Tenho*, 1. Person Präsens von *ter*: haben. Das *e* vor *nh* oder *lh* wird wie ein dumpfes a ausgesprochen, vor allem in Lissabon und im Süden Portugals: *venho* (**wä**nju) = ich komme; *jeolho* (sch**äl**ju) = Knie"
+        ]
     }]
 }
