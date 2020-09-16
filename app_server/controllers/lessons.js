@@ -34,7 +34,7 @@ const renderWebsite = (req, res, responseBody) => {
 
 const allLessons = (req, res) => {
 
-  const path = '/api/lessons';;
+  const path = '/api/lessons';
 
   const requestOptions = {
     url: `${apiOptions.server}${path}`,
@@ -60,6 +60,35 @@ const createLesson = (req, res) => {
 }
 
 const addLesson = (req, res) => {
+
+  const path = '/api/lessons';
+
+  const postData = {
+    title: req.body.title,
+    translation: req.body.translation,
+    //cloudinary: req.body.cloudinary
+  };
+
+  console.log(postData);
+
+  const requestOptions = {
+    url: `${apiOptions.server}${path}`,
+    method: 'POST',
+    json: postData
+  };
+
+  request(requestOptions, (err, {statusCode}, body) => {
+
+    if (statusCode === 201) {
+      //res.redirect(`/lessons/${locationid}`);
+      res.redirect(`/`);
+
+    } else {
+      showError(req, res, statusCode);
+    }
+
+  });
+
 };
 
 module.exports = {

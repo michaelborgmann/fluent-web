@@ -13,6 +13,10 @@ router
   .post(lessonsController.createLesson);
 
 router
+  .route('/lessons/:lessonid')
+  .get(lessonsController.getLessonById)
+
+router
   .route('/lessons/:lessonid/imageURL')
   .get(lessonsController.getLessonImageUrl)
   .put(lessonsController.updateLessonImageUrl);

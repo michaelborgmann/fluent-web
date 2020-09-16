@@ -14,13 +14,20 @@
         "sender": "other",
         "target": "Por que **é** que o se**nhor** não toma um **tá**xi?",
         "source": "Warum nehmen Sie kein (ist es, daß der Herr nicht nimmt ein) Taxi?",
-        "audio": "lesson004_dialogue_01"
+        "audio": "lesson004_dialogue_01",
+        "notes": [
+          "*Por que é que*, wörtlich: 'warum ist es, daß…' - *é que* wird nach dem Interrogativpronomen verwendet, um den Fragecharacter zu betonen = um das Interrogativpronomen zu unterstreichen. *É que* könnte aber weggelassen werden: *Porque não toma um táxi?*= Warum nehmen Sie kein Taxi?
+        ]
     }, {
         "type": "message",
         "sender": "user",
         "target": "**É** di**fí**cil arranjar um **tá**xi agora. **Há** muita **gen**te à es**pe**ra.",
         "source": "[Es] ist schwierig, jetzt ein Taxi [zu] bekommen (bekommen ein Taxi jetzt). [Es] gibt viele Leute, [die] (beim) warten.",
-        "audio": "lesson004_dialogue_02"
+        "audio": "lesson004_dialogue_02",
+        "notes": [
+          "Merken Sie sich, daß das Subjeckt bei dem Ausdruck *é difícil* (es ist schwierig) fehlt. Es gibt im Portugiesischen viele ähnliche Ausdrücke: *é facil* (**ä** **fa**ssil) = es ist einfach: *é possivel* (**ä** pu**ssi**wäl) = es ist möglich; *é preciso* (**ä** pre**ssi**su) = es ist nötig, notwendig. *Arranjar* = finden, bekommen, wird in vielen Fällen benutzt, die eine Suche beinhalten: *arranjar um lugar* (arran**scha**rung lu**gar**) = einen Platz finden, bekommen; *arranjar trabalho* (tra**ba**lju) = Arbeit finden (nach einer Suche); *arranjar dinheiro* (di**njej**ru) = Geld besorgen.",
+          "*Há*, von *haver* (a**weer) = existieren, geben. *Há* = es gibt, wird immerohne Subject in der 3. Person Singular verwendet."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -32,13 +39,19 @@
         "sender": "user",
         "target": "O **trân**sito es**tá** ter**rí**vel. Não **sei** que fa**zer**.",
         "source": "Der Verkehr ist furchtbar. [Ich] weiß nicht, was [ich] tun [soll]",
-        "audio": "lesson004_dialogue_04"
+        "audio": "lesson004_dialogue_04",
+        "notes": [
+          "*O trânsito está terrivel* = Der Verkehr ist furchtbar (jetzt, vorübergehend). Siehe auch Lektion 3, Anmerkung (1). *Não sei* = ich weiß nicht - 1. Person von *saber* (wissen, können) in der Verneinung. Siehe auch Lektion 3, Anmerkung (2). Später werden wir auf dieses Verb zurückkommen."
+        ]
     }, {
         "type": "message",
         "sender": "other",
         "target": "Porque não **vai** de **me**tro?",
         "source": "Warum fahren [Sie] nicht (nicht fahren) mit der U-Bahn?",
-        "audio": "lesson004_dialogue_05"
+        "audio": "lesson004_dialogue_05",
+        "notes": [
+          "*Vai* - Verb *ir* = gehen, fahren, fliegen. *Ir* ist unregelmäßig. Die erste Person: *vou* wird ähnlich wie die 1. Person von *ser* und *estar* ausgesprochen. Denken Sie daran: *ser* -> Dauerzustand, Identifikation; *estar* -> vorübergehender Zustand: *ele é português* = er ist 'und bleibt' Portugiese; *ela está em Lisboa* (**ä**lasch**ta** **eing** lisch**bo**a) = sie ist 'jetzt' in Lissabon, kann aber woanders hinfahren."
+        ]
     }, {
         "type": "message",
         "sender": "user",
@@ -68,6 +81,9 @@
         "sender": "user",
         "target": "En**tão**, vou a **pé**.",
         "source": "Dann gehe [ich] zu Fuß.",
-        "audio": "lesson004_dialogue_10"
+        "audio": "lesson004_dialogue_10",
+        "notes", [
+          "*A pé* zu Fuß. In Verbindung mit Verkehrsmitteln wird sonst immer *de* benutzt: *vou de táxi* = ich fahre mit dem Taxi; *vou de metro* = ich fahre mit der U-Bahn; *vou de eléctrico* = ich fahre mit der Straßenbahn; *vou de autocarro* = ich fahre mit dem Bus; *vou de avião* (awi**au(ng)) = ich fliege. *O avião* = Flugzeug. *Voud de carro* (**ka**rru) = ich fahre mit dem Auto. *Ir de* = *andar de*: *ir de metro* = *andar de metro*. *Andar* wird allerdings nur in Fällen benutzt, in denen kein Ziel angegeben ist."
+        ]
     }]
 }

@@ -6,6 +6,7 @@ block content
     .col-12
       h1= pageHeader.title
         small &nbsp;#{pageHeader.strapline}
+
   .row
     .col-12.col-md-8
       .error= message
@@ -18,4 +19,4 @@ block content
             p.translation= lesson.translation
 
     .col-12.col-md-4
-      p.lead Assimil - Portugiesisch ohne Mühe
+      a.nav-link(href='/lessons/new') Create new Lesson

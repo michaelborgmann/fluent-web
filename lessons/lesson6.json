@@ -14,7 +14,11 @@
         "sender": "user",
         "target": "**Não**, não é nada **di**sso.",
         "source": "Nein, [es] ist nichts (nicht ist nichts) davon.",
-        "audio": "lesson006_dialogue_01"
+        "audio": "lesson006_dialogue_01",
+        "notes": [
+          "*Não, não é nada disso* - wörtlich: 'Nein, es ist nicht nichts davon', also: Nein, es ist nichts davon. Wenn *nada* Objekt ist, entsteht eine doppelte Verneinung (wie im Bayerischen üblich). *Disso* entsteht durch die Verschmelzung von *de + isso*, wörtlich: 'von das (da)', also, davon; *isto* = das (hier), *disto* (**di**schtu) = davon, allerdings wird hier etwas gemeint, das sich in der Nähe des Sprechers befindet.",
+          "Merken Sie sich, daß das Demonstrativpronomen, das für das deutsch 'das' steht, im Portugiesischen fehlt: *é bom* = das ist gut: *não é isso* = das ist es nicht."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -32,13 +36,20 @@
         "sender": "other",
         "target": "E **co**me **bem**?",
         "source": "Und Sie essen gut?",
-        "audio": "lesson006_dialogue_04"
+        "audio": "lesson006_dialogue_04",
+        "notes": [
+          "Verb *comer* (ku**meer**) = essen. *Beber* (be**beer**) = trinken. Alle regelmäßigen Verben im Präsens haben die gleiche Endung für die 1. Person Sing.: *-o* (u): *eu falo* (**ee**u **fa**lu), *eu como* (**ee**u **ko**mu), *eu bebo.",
+          "*Bem* ist ein Adverb und bleibt deswegen immer unveränderlich. Vgl. mit *bom*, Adjektiv: *bom dia* = guten Morgen - *bom* richtet sich in Geschlecht und Zahl nach dem Substantiv (*o dia* - mask.). *Boa noite* = gute Nacht (*a noite* - fem.)."
+        ]
     }, {
         "type": "message",
         "sender": "user",
         "target": "**Sim**, **co**mo. Principal**men**te ce**nou**ras. Gosto **mui**to de ce**nou**ras.",
         "source": "Ja, ich esse [gut]. Vor allem Karotten. Ich mag Karotten sehr (mag sehr.)",
-        "audio": "lesson006_dialogue_05"
+        "audio": "lesson006_dialogue_05",
+        "notes": [
+          "*Gostar de* = mögen, gerne haben. Das Verb tritt immer mit der Präposition *de* auf. *Gostar de comer* = gern essen. *Gosto muito* = ich mag sehr. (*Amar* = lieben, und ist auch regelmäßig.)"
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -68,7 +79,10 @@
         "sender": "other",
         "target": "O se**nhor** com o seu nome e os seus **gos**tos não precisa de um **mé**dico.",
         "source": "Sie (Der Herr), mit (dem) Ihrem Namen und (dem) Ihrem Geschmack (Geschmäcker), brauchen keinen (nicht braucht einen) Arzt.",
-        "audio": "lesson006_dialogue_10"
+        "audio": "lesson006_dialogue_10",
+        "notes": [
+          "*Precisar de* = brauchen, benötigen, wird, genauso wie *gostar de*, immer mit der Präposition *de* benutzt: *não precisa de um médico* = Sie brauchen keinen Arzt; *precisa de um veterinário* = Sie brauchen einen Tierarzt."
+        ]
     }, {
         "type": "message",
         "sender": "user",

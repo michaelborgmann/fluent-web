@@ -14,43 +14,65 @@
         "sender": "user",
         "target": "Boa **ta**rde, sehnhor dou**tor**.",
         "source": "Guten Tag (Nachmittag), Herr Doktor.",
-        "audio": "lesson005_dialogue_01"
+        "audio": "lesson005_dialogue_01",
+        "notes": [
+          "*Bom dia* = guten Morgen; *boa tarde*, wörtlich: 'guten Nachmittag' sagt man nachmittags; *boa noite* = guten Abend und auch gute Nacht."
+        ]
     }, {
         "type": "message",
         "sender": "other",
         "target": "Boa **tar**de. Faz fa**vor** de se sen**tar**.",
         "source": "Guten Tag. Bitte setzen [Sie] sich (tun Sie den Gefallen, sich hinsetzen).",
-        "audio": "lesson005_dialogue_02"
+        "audio": "lesson005_dialogue_02",
+        "notes": [
+          "Der Arzt hätte auch sagen können '*sente-se, por favor/se faz favor*' = setzen Sie sich, bitte! Der Ausdruck *faz favor de* + Infinitiv eines Verbes ist aber etwas förmlicher und gebräuchlicher."
+        ]
     }, {
         "type": "message",
         "sender": "user",
         "target": "Obri**ga**do.",
         "source": "Danke.",
-        "audio": "lesson005_dialogue_03"
+        "audio": "lesson005_dialogue_03",
+        "notes": [
+          "*Obrigado*, wörtlich: (zu Dank) verpflichtet = Danke. Ein Mann sagt *obrigado* und eine Frau *obrigada*. Die Antwort auf *obrigado/obrigada* ist *de nada* = keine Ursache/bitte."
+        ]
     }, {
         "type": "message",
         "sender": "other",
         "target": "É a primeira **vez** que vem à con**sul**ta?",
         "source": "Ist [es] das erste Mal, daß [Sie] zur Sprechstunde kommen (daß kommen zur Sprechstunde)?",
-        "audio": "lesson005_dialogue_04"
+        "audio": "lesson005_dialogue_04",
+        "notes": [
+          "*Vem*, 3. Person Singluar des Verbes *vir* (hierherkommen). Erinnern Sie sich daran, daß die höfliche Anrede durch die 3. Person ausgedrückt wird (siehe a. Lektion 1, Anmerkung 2)."
+        ]
     }, {
         "type": "message",
         "sender": "user",
         "target": "É, **sim**.",
         "source": "Ja (ist, ja).",
-        "audio": "lesson005_dialogue_05"
+        "audio": "lesson005_dialogue_05",
+        "notes": [
+          "Um eine Frage zu bejahen ist es im Portugiesischen üblich, mit dem Verb statt mit dem Wort 'ja' = *sim* zu antworten. Beispiele: *Está doente? - Estou*. Man kann das Wort 'sim' hinzufügen: *Estou, sim* (siehe a. Lektion 1, Anmerkung 3). Die Anwendung von 'sim' allein als Antwort ist weniger gebräuchlich."
+        ]
     }, {
         "type": "message",
         "sender": "other",
         "target": "Qual é seu **no**me, por fa**vor**?",
         "source": "[Wie] (welcher) ist Ihr (der Ihr) Name, bitte?",
-        "audio": "lesson005_dialogue_06"
+        "audio": "lesson005_dialogue_06",
+        "notes": [
+          "*Nome* =Vorname oder Vor- und Familienname; *apelido* (ape**li**du) oder *sobrenome* (sobre**no**me) = Familienname. Merken Sie sich, daß das Possessivpronomen *o seu* - Ihr - 3. Person Singular ist (siehe a. Lektion 1, Anmerkung 2)."
+        ]
     }, {
         "type": "message",
         "sender": "user",
         "target": "**Cha**mo-me José Co**el**ho.",
         "source": "[Ich] heiße (nenne mich) José Coelho.",
-        "audio": "lesson005_dialogue_07"
+        "audio": "lesson005_dialogue_07",
+        "notes": [
+          "*Chamo-me* (ich heiße), wörtlich 'ich nenne mich' ist reflexiv. Im Portugiesischen wird das Pronomen hinter das Verb gestellt, es sei denn, es handelt sich um einen verneinten Satz oder einen Fragesatz. Beispiele: *chamo-me João* (schua**au**(ng)); *chama-se Isabel* (**scha**massisa**bäl*) = sie heißt Isabel. Aber: *Não me chamo João* = ich heiße nicht João; *como te chamas?* (**ko**mute **scha**masch?) = wie heißt du? *De que se queixa?*, wörtlich: 'über was beschweren Sie sich?', also, welche Beschwrden haben Sie? Abweicheung in Brasilien: *eu me chamo João*. In Brasilien steht das Pronomen vor dem Verb.",
+          "*Coelho* bedeutet Kaninchenn. Bei den Familiennamen in Portugal kommen häufig Tier-, Pflanzen- und Baumnamen vor. Dieses Phänomen läßt sich höchstwahrscheinlich auf die Vergangenheit zurückführen, als, nach dem 5. Jh., ein großer Teil der bekehrten Juden in Portugal blieb und sich diese Namen zulegte."
+        ]
     }, {
         "type": "message",
         "sender": "other",
@@ -62,12 +84,18 @@
         "sender": "user",
         "target": "**Bem**, sinto-me do**en**te. Sempre que **po**nho o **me**u cha**péu** **te**nho **do**res de ca**be**ça.",
         "source": "Na ja (gut), [ich] fühle mich krank. Immer wenn [ich] meinen (den meinen) Hut aufsetze, habe [ich] Kopfschmerzen.",
-        "audio": "lesson005_dialogue_09"
+        "audio": "lesson005_dialogue_09",
+        "notes": [
+          "*Sinto-me* = ich fühle mich, 1. Person Singular von *sentir-se* (sich fühlen). Wir werden auf dieses Verb zurückkommen. *Ponho*, 1. Person Singular von *pôr* (setzen, legen, stellen) = ist ein unregelmäßiges Verb, das wir später lernen werden."
+        ]
     }, {
         "type": "message",
         "sender": "other",
         "target": "Tal**vez** ti**ran**do o cha**péu**…",
         "source": "Vielleicht [wenn Sie] den Hut abnehmen (den Hut abnehmend)…",
-        "audio": "lesson005_dialogue_10"
+        "audio": "lesson005_dialogue_10",
+        "notes": [
+          "*Tirando*, Gerundium von *tirar* (Antonym von *pôr*) = ziehen, abnehmen, wegnehmen. Gerundium = Partizip Präsens und wird durch anhängen von *-ndo* gebildet. Diese Form ist vor allem in Brasilien von sehr großer Bedeutung."
+        ]
     }]
 }
