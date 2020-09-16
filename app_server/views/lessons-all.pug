@@ -16,6 +16,9 @@ block content
           .card-block
             h4
               a(href=`/dialogues/${lesson.dialogue[0]}`)= lesson.title
+
+              a.span.badge.badge-pill.badge-default.float-right(href=`/lessons/${lesson._id}`) Details
+
             p.translation= lesson.translation
 
     .col-12.col-md-4

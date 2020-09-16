@@ -4,9 +4,11 @@ const apiOptions = {
   server: 'http://localhost:3000'
 };
 
+/*
 if (process.env.NODE_ENV === 'production') {
   apiOptions.server = 'https://lit-tor-33173.herokuapp.com';
 }
+*/
 
 const renderWebsite = (req, res, responseBody) => {
 
@@ -47,6 +49,63 @@ const allLessons = (req, res) => {
   });
 
 }
+
+const renderShowLesson = (req, res, responseBody) => {
+
+  let message = null;
+
+  if (!(responseBody instanceof Object)) {
+    message = "API lookup error";
+    responseBody = [];
+  } else {
+
+    /* NOTE: Deactivated because Object not Array
+    if (!responseBody.length) {
+      message = "No lessons found";
+    }
+    */
+
+  }
+
+  const response = {
+      title: 'Fluent - Language Learning',
+      pageHeader: {
+        title: 'Fluent',
+        strapline: 'Show Lesson'
+      },
+      responseBody,
+      message
+  };
+
+  console.log(responseBody);
+
+  res.render('lesson-info', {
+    title: 'Fluent - Language Learning',
+    pageHeader: {
+      title: 'Fluent',
+      strapline: 'Show Lesson'
+    },
+    lesson: responseBody,
+    message
+  });
+
+};
+
+const showLesson = (req, res) => {
+
+  const path = `/api/lessons/${req.params.lessonid}`;
+
+  const requestOptions = {
+    url: `${apiOptions.server}${path}`,
+    method: 'GET',
+    json: {}
+  }
+
+  request(requestOptions, (err, response, body) => {
+    renderShowLesson(req, res, body);
+  });
+
+};
 
 const renderLessonForm = (req, res) => {
   res.render('lesson-add-form', {
@@ -94,5 +153,6 @@ const addLesson = (req, res) => {
 module.exports = {
   allLessons,
   createLesson,
+  showLesson,
   addLesson
 }
