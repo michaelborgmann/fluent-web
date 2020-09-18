@@ -23,6 +23,13 @@ router
   .get(lessonsController.createLesson)
   .post(lessonsController.addLesson);
 
-  router.get('/lessons/:lessonid', lessonsController.showLesson);
+router
+  .route('/lessons/:lessonid')
+  .get(lessonsController.showLesson);
+
+router
+  .route('/lessons/:lessonid/edit')
+  .get(lessonsController.editLesson)
+  .post(lessonsController.updateLesson);
 
 module.exports = router;

@@ -15,6 +15,7 @@ router
 router
   .route('/lessons/:lessonid')
   .get(lessonsController.getLessonById)
+  .post(lessonsController.updateLesson)
 
 router
   .route('/lessons/:lessonid/imageURL')

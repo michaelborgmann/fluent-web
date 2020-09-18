@@ -73,6 +73,60 @@ const getLessonById = function (req, res) {
 
 };
 
+const updateLesson = function (req, res) {
+
+  if (!req.params.lessonid) {
+    res
+      .status(404)
+      .json( {
+        "message": "Not found, lessonid is required"
+      });
+      return;
+  }
+
+  LessonModel
+    .findById(req.params.lessonid)
+    .exec((err, lesson) => {
+
+      if (!lesson) {
+        res
+          .status(404)
+          .json({
+            "message": "lessonid not found"
+          });
+        return
+
+      } else if (err) {
+        res
+          .status(400)
+          .json(err);
+        return;
+      }
+
+      lesson.title = req.body.title;
+      lesson.translation = req.body.translation;
+      lesson.imageURL = { cloudinary: req.body.cloudinary };
+
+      console.log(lesson);
+
+      lesson.save((err, lesson) => {
+
+        if (err) {
+          res
+            .status(404)
+            .json(err)
+
+        } else {
+          res
+            .status(200)
+            .json(lesson)
+        }
+
+      });
+
+    });
+};
+
 const getLessonImageUrl = function (req, res) {
 
   console.log("");
@@ -153,6 +207,7 @@ module.exports = {
   getAllLessons,
   createLesson,
   getLessonById,
+  updateLesson,
   getLessonImageUrl,
   updateLessonImageUrl
 };
