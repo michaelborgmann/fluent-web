@@ -45,6 +45,7 @@ const allLessons = (req, res) => {
   };
 
   request(requestOptions, (err, response, body) => {
+    console.log(body);
     renderWebsite(req, res, body);
   });
 
@@ -195,7 +196,6 @@ const editLesson = (req, res) => {
   request(requestOptions, (err, response, body) => {
     renderLessonEditForm(req, res, body);
   });
-
 
 };
 

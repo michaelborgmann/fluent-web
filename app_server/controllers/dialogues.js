@@ -27,6 +27,8 @@ const showError = (req, res, status) => {
   res.render('generic-text', { title, content });
 };
 
+// Get Dialogue
+
 const renderWebsite = (req, res, responseBody) => {
 
   let message = null;
@@ -55,7 +57,17 @@ const renderWebsite = (req, res, responseBody) => {
 
 const showDialogue = (req, res) => {
 
+  if (!req.params.dialogueid) {
+    console.log('dialogueid not found');
+
+    createDialogue()
+  } else {
+    console.log('dialogueid is ' + req.params.dialogueid);
+  }
+
   const path = `/api/dialogues/${req.params.dialogueid}`;
+
+  console.log(path)
 
   const requestOptions = {
     url: `${apiOptions.server}${path}`,
@@ -73,6 +85,52 @@ const showDialogue = (req, res) => {
   });
 }
 
+// Create New Dialogue
+
+const renderDialogeAddForm = (req, res) => {
+  res.render('dialogue-add-form', {
+    title: 'Add Dialogue to Lesson',
+    pageHeader: { title: 'Add Dialogue' }
+  });
+};
+
+const createDialogue = (req, res) => {
+    renderDialogeAddForm(req, res);
+};
+
+const addDialogue = (req, res) => {
+
+  const path = `/api/dialogues/${req.params.lessonid}`;
+
+  const postData = [{
+    targetLanguage: req.body.targetLanguage,
+    sourceLanguage: req.body.sourceLanguage
+  }];
+
+  const requestOptions = {
+    url: `${apiOptions.server}${path}`,
+    method: 'POST',
+    json: postData
+  };
+
+  request(requestOptions, (err, {statusCode}, body) => {
+
+    console.log(err);
+
+    if (statusCode === 201) {
+      //res.redirect(`/lessons/${locationid}`);
+      res.redirect(`/`);
+
+    } else {
+      showError(req, res, statusCode);
+    }
+
+  });
+
+};
+
 module.exports = {
-  showDialogue
+  showDialogue,
+  createDialogue,
+  addDialogue
 }

@@ -15,7 +15,11 @@ block content
         .card
           .card-block
             h4
-              a(href=`/dialogues/${lesson.dialogue[0]}`)= lesson.title
+
+              if lesson.dialogue[0]
+                a(href=`/dialogues/${lesson.dialogue[0]}`)= lesson.title
+              else
+                a(href=`/lessons/${lesson._id}/dialogue`)= lesson.title
 
               a.span.badge.badge-pill.badge-default.float-right(href=`/lessons/${lesson._id}`) Details
 

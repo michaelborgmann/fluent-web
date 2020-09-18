@@ -15,13 +15,18 @@ router.get('/about', ctrlOthers.about);
 // Lessons & Dialoges
 
 router.get('/', lessonsController.allLessons);
+
+router
+  //.route()'/dialogues/new')
+  .route('/lessons/:lessonid/dialogue')
+  .get(dialoguesController.createDialogue)
+  .post(dialoguesController.addDialogue);
+
 router.get('/dialogues/:dialogueid', dialoguesController.showDialogue);
-// router.get('/dialogue/:dialogueid', dialoguesController.asdf);
 
 router
   .route('/lessons/new')
   .get(lessonsController.createLesson)
-  .post(lessonsController.addLesson);
 
 router
   .route('/lessons/:lessonid')

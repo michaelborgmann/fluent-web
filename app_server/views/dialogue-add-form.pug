@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+  .row
+    .col-12.col-md-8
+      form#createLesson(action="", method="post", role="form")
+
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="targetLanguage") Target language
+          .col-12.col-sm-10
+            input#targetLanguage.form-control(name="targetLanguage")
+
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="sourceLanguage") Source language
+          .col-12.col-sm-10
+            input#sourceLanguage.form-control(name="sourceLanguage")
+
+        button.btn.btn-primary.float-right Add Dialogue
