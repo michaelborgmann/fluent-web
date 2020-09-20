@@ -40,6 +40,7 @@ router
 router
   .route('/dialogues/:dialogueid/message/:index')
   .get(messagesController.getMessageByIndex)
-  .post(messagesController.createMessageByIndex);
+  .post(messagesController.createMessageByIndex)
+  .put(messagesController.updateNotesByIndex);
 
 module.exports = router;

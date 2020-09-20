@@ -51,8 +51,6 @@ const addNote = (req, res) => {
     json: postData
   };
 
-  console.log("Request Options: ", requestOptions);
-
   request(requestOptions, (err, {statusCode}, body) => {
 
     if (statusCode === 201) {
@@ -69,8 +67,6 @@ const addNote = (req, res) => {
 // Edit Notes
 
 const renderNotesEditForm = (req, res, body) => {
-
-  console.log(body);
 
   res.render('notes-edit-form', {
     title: 'Update Notes to Message',
@@ -93,11 +89,35 @@ const editNotes = (req, res) => {
     renderNotesEditForm(req, res, body);
   });
 
-
 };
+
+const updateNotes = (req,res) => {
+
+  const path = `/api/dialogues/${req.params.dialogueid}/message/${req.params.messageid}`;
+
+  const postData = req.body;
+
+  const requestOptions = {
+    url: `${apiOptions.server}${path}`,
+    method: 'PUT',
+    json: postData
+  };
+
+  request(requestOptions, (err, {statusCode}, body) => {
+
+    if (statusCode === 201) {
+      res.redirect(`/dialogues/${req.params.dialogueid}`);
+
+    } else {
+      showError(req, res, statusCode);
+    }
+
+  });
+}
 
 module.exports = {
   createNote,
   addNote,
   editNotes,
+  updateNotes
 }

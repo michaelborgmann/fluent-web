@@ -47,8 +47,8 @@ router
 
 router
   .route('/dialogue/:dialogueid/messages')
-  .get(messagesController.editMessage)
-  .post(messagesController.updateMessage);
+  .get(messagesController.editMessage);
+  //.post(messagesController.updateMessage);
 
 router
   .route('/dialogue/:dialogueid/messages/:messageid/notes/add')
@@ -57,6 +57,7 @@ router
 
 router
   .route('/dialogue/:dialogueid/messages/:messageid/notes')
-  .get(notesController.editNotes);
+  .get(notesController.editNotes)
+  .post(notesController.updateNotes);
 
 module.exports = router;
