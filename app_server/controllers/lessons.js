@@ -123,12 +123,14 @@ const createLesson = (req, res) => {
 
 const addLesson = (req, res) => {
 
+  console.log('add lesson');
+
   const path = '/api/lessons';
 
   const postData = {
     title: req.body.title,
     translation: req.body.translation,
-    //cloudinary: req.body.cloudinary
+    cloudinary: req.body.cloudinary
   };
 
   const requestOptions = {

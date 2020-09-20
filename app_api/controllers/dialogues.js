@@ -11,14 +11,17 @@ const createDialogue = async (req, res) => {
       .findById(lessonid)
       .select('dialogue')
       .exec((err, lesson) => {
+
         if (err) {
           res
             .status(400)
             .json(err);
+
         } else {
           addDialogue(req, res, lesson);
-        }
 
+
+        }
       });
 
   } else {

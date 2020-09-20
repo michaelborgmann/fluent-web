@@ -31,7 +31,7 @@ const createLesson = function (req, res) {
       cloudinary: req.body.cloudinary,
     }
   }, (err, lesson) => {
-
+    
     if (err) {
       res
         .status(400)

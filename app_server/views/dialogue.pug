@@ -10,13 +10,16 @@ block content
     .col-12.col-md-8
       .error= message
 
-      p #{dialogue.targetLanguage} - #{dialogue.sourceLanguage}
+      .card
+        .card-block
+
+          h4 #{dialogue.targetLanguage} - #{dialogue.sourceLanguage}
 
       each message in dialogue.messages
         .card
           .card-block
             p #{message.target}
             p #{message.source}
-            
+
     .col-12.col-md-4
-      p.lead Assimil - Portugiesisch ohne Mühe
+      a.nav-link(href=`/dialogue/${dialogue._id}/messages/add`) Add Message

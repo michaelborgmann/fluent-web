@@ -1,22 +1,27 @@
 const mongoose = require('mongoose');
-const DialogueModel = mongoose.model('Lesson');
+const DialogueModel = mongoose.model('Dialogue');
 
-const createMessage = function (req, res) {
+const createMessage = async (req, res) => {
   const dialogueid = req.params.dialogueid;
+
   if (dialogueid) {
+
     DialogueModel
       .findById(dialogueid)
       .select('messages')
       .exec((err, dialogue) => {
+
         if (err) {
           res
             .status(400)
             .json(err);
+
         } else {
           addMessage(req, res, dialogue);
+
         }
-      }
-    );
+      });
+
   } else {
     res
       .status(404)
@@ -32,6 +37,7 @@ const addMessage = function(req, res, dialogue) {
     res
       .status(404)
       .json({ "message": "dialogueid not found" });
+
   } else {
 
     dialogue.messages.push({
