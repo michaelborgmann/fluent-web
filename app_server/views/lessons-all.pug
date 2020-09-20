@@ -17,11 +17,10 @@ block content
             h4
 
               if lesson.dialogue[0]
-                a(href=`/dialogues/${lesson.dialogue[0]}`)= lesson.title
+                //a(href=`/dialogues/${lesson.dialogue[0]}`)= lesson.title
+                a(href=`/lessons/${lesson._id}`)= lesson.title
               else
                 a(href=`/lessons/${lesson._id}/dialogue`)= lesson.title
-
-              a.span.badge.badge-pill.badge-default.float-right(href=`/lessons/${lesson._id}`) Details
 
             p.translation= lesson.translation
 

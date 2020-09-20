@@ -67,8 +67,6 @@ const showDialogue = (req, res) => {
 
   const path = `/api/dialogues/${req.params.dialogueid}`;
 
-  console.log(path)
-
   const requestOptions = {
     url: `${apiOptions.server}${path}`,
     method: 'GET',

@@ -6,6 +6,7 @@ const ctrlOthers = require('../controllers/others');
 const lessonsController = require('../controllers/lessons');
 const dialoguesController = require('../controllers/dialogues');
 const messagesController = require('../controllers/messages');
+const notesController = require('../controllers/notes');
 
 /* GET home page. */
 //router.get('/', ctrlLocations.homelist);
@@ -43,5 +44,19 @@ router
   .route('/dialogue/:dialogueid/messages/add')
   .get(messagesController.createMessage)
   .post(messagesController.addMessage);
+
+router
+  .route('/dialogue/:dialogueid/messages')
+  .get(messagesController.editMessage)
+  .post(messagesController.updateMessage);
+
+router
+  .route('/dialogue/:dialogueid/messages/:messageid/notes/add')
+  .get(notesController.createNote)
+  .post(notesController.addNote);
+
+router
+  .route('/dialogue/:dialogueid/messages/:messageid/notes')
+  .get(notesController.editNotes);
 
 module.exports = router;

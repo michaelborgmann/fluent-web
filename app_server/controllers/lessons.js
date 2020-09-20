@@ -45,7 +45,6 @@ const allLessons = (req, res) => {
   };
 
   request(requestOptions, (err, response, body) => {
-    console.log(body);
     renderWebsite(req, res, body);
   });
 
@@ -123,8 +122,6 @@ const createLesson = (req, res) => {
 
 const addLesson = (req, res) => {
 
-  console.log('add lesson');
-
   const path = '/api/lessons';
 
   const postData = {
@@ -170,7 +167,7 @@ const renderLessonEditForm = (req, res, responseBody) => {
       title: 'Fluent - Language Learning',
       pageHeader: {
         title: 'Fluent',
-        strapline: 'Show Lesson'
+        strapline: 'Update Lesson'
       },
       responseBody,
       message

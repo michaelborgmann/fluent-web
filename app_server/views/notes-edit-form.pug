@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+  .row
+    .col-12.col-md-8
+
+      form#editNotes(action="", method="post", role="form")
+
+        each note, index in notes
+          .card
+            .card-block
+
+              .form-group.row
+                label.col-10.col-sm-2.col-form-label(for="note") Note
+                .col-12.col-sm-10
+                  input#type.form-control(name="note" value=`${note}`)
+
+        button.btn.btn-primary.float-right Update Notes

@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const LessonModel = mongoose.model('Lesson');
 
+// All Lessons
+
 const getAllLessons = function (req, res) {
   LessonModel.find({}, function(err, lessons) {
 
@@ -22,6 +24,8 @@ const getAllLessons = function (req, res) {
   });
 };
 
+// Create Lesson
+
 const createLesson = function (req, res) {
 
   LessonModel.create({
@@ -31,7 +35,7 @@ const createLesson = function (req, res) {
       cloudinary: req.body.cloudinary,
     }
   }, (err, lesson) => {
-    
+
     if (err) {
       res
         .status(400)
@@ -45,6 +49,8 @@ const createLesson = function (req, res) {
 
   });
 };
+
+// Get Lesson by Id
 
 const getLessonById = function (req, res) {
 
@@ -72,6 +78,8 @@ const getLessonById = function (req, res) {
     })
 
 };
+
+// Update Lesson
 
 const updateLesson = function (req, res) {
 
@@ -106,8 +114,6 @@ const updateLesson = function (req, res) {
       lesson.title = req.body.title;
       lesson.translation = req.body.translation;
       lesson.imageURL = { cloudinary: req.body.cloudinary };
-
-      console.log(lesson);
 
       lesson.save((err, lesson) => {
 

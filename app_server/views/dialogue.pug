@@ -15,11 +15,18 @@ block content
 
           h4 #{dialogue.targetLanguage} - #{dialogue.sourceLanguage}
 
-      each message in dialogue.messages
+      each message, index in dialogue.messages
         .card
           .card-block
             p #{message.target}
+
+              if message.notes[0]
+                a.span.badge.badge-pill.badge-default.float-right(href=`/dialogue/${dialogue._id}/messages/${index}/notes`) Edit Notes
+
+              a.span.badge.badge-pill.badge-default.float-right(href=`/dialogue/${dialogue._id}/messages/${index}/notes/add`) Add Note
+
             p #{message.source}
 
     .col-12.col-md-4
       a.nav-link(href=`/dialogue/${dialogue._id}/messages/add`) Add Message
+      a.nav-link(href=`/dialogue/${dialogue._id}/messages`) Edit Messages

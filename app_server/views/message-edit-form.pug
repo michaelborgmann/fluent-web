@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+  .row
+    .col-12.col-md-8
+
+      form#editMessage(action="", method="post", role="form")
+
+        each message, index in messages
+          .card
+            .card-block
+
+              .form-group.row
+                label.col-10.col-sm-2.col-form-label(for="type") Type
+                .col-12.col-sm-10
+                  input#type.form-control(name="type" value=`${message.type}`)
+
+              .form-group.row
+                label.col-10.col-sm-2.col-form-label(for="sender") Sender
+                .col-12.col-sm-10
+                  input#sender.form-control(name="sender" value=`${message.sender}`)
+
+              .form-group.row
+                label.col-10.col-sm-2.col-form-label(for="target") Target
+                .col-12.col-sm-10
+                  input#target.form-control(name="target" value=`${message.target}`)
+
+              .form-group.row
+                label.col-10.col-sm-2.col-form-label(for="source") Source
+                .col-12.col-sm-10
+                  input#source.form-control(name="source" value=`${message.source}`)
+
+              .form-group.row
+                label.col-10.col-sm-2.col-form-label(for="audio") Audio
+                .col-12.col-sm-10
+                  input#audio.form-control(name="audio" value=`${message.audio}`)
+
+        button.btn.btn-primary.float-right Update Message  #{index}

@@ -34,6 +34,12 @@ router
 // messages
 router
   .route('/dialogues/:dialogueid/message')
-  .post(messagesController.createMessage);
+  .post(messagesController.createMessage)
+  .put(messagesController.updateMessages);
+
+router
+  .route('/dialogues/:dialogueid/message/:index')
+  .get(messagesController.getMessageByIndex)
+  .post(messagesController.createMessageByIndex);
 
 module.exports = router;

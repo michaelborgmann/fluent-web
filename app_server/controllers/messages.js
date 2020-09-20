@@ -60,7 +60,77 @@ const addMessage = (req, res) => {
 
   request(requestOptions, (err, {statusCode}, body) => {
 
-    console.log(requestOptions);
+    if (statusCode === 201) {
+      res.redirect(`/dialogues/${req.params.dialogueid}`);
+
+    } else {
+      showError(req, res, statusCode);
+    }
+
+  });
+
+};
+
+// Edit Message
+
+const renderMessageEditForm = (req, res, responseBody) => {
+
+  let message = null;
+
+  if (!(responseBody.messages instanceof Array)) {
+    message = "API lookup error";
+    responseBody = [];
+  } else {
+    if (!responseBody.messages.length) {
+      message = "No messages found";
+    }
+  }
+
+  res.render('message-edit-form', {
+    title: 'Edit Messages',
+    pageHeader: { title: 'Edit Messages' },
+    messages: responseBody.messages,
+    message
+  });
+};
+
+const editMessage = (req, res) => {
+
+  const path = `/api/dialogues/${req.params.dialogueid}`;
+
+  const requestOptions = {
+    url: `${apiOptions.server}${path}`,
+    method: 'GET',
+    json: {}
+  }
+
+  request(requestOptions, (err, response, body) => {
+    renderMessageEditForm(req, res, body);
+  });
+
+};
+
+const updateMessage = (req, res) => {
+
+  const path = `/api/dialogues/${req.params.dialogueid}/message`;
+
+  const postData = req.body.type.map((type, index) => {
+    return {
+      type: req.body.type[index],
+      sender: req.body.sender[index],
+      target: req.body.target[index],
+      source: req.body.source[index],
+      audio: req.body.audio[index],
+    }
+  });
+
+  const requestOptions = {
+    url: `${apiOptions.server}${path}`,
+    method: 'PUT',
+    json: postData
+  };
+
+  request(requestOptions, (err, {statusCode}, body) => {
 
     if (statusCode === 201) {
       res.redirect(`/dialogues/${req.params.dialogueid}`);
@@ -75,5 +145,7 @@ const addMessage = (req, res) => {
 
 module.exports = {
   createMessage,
-  addMessage
+  addMessage,
+  editMessage,
+  updateMessage
 }
