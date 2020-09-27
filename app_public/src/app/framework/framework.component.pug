@@ -1,0 +1,31 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(routerLink='')
+
+    - var logoImage = "https://res.cloudinary.com/dvtdd827t/image/upload/v1601072050/fluent/assets/fluent_logo.svg"
+    |
+    img.d-inline-block.align-top#logoImage(src=logoImage width=30 height=30 alt="")
+    |
+    | Fluent
+
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navMain')
+    span.navbar-toggler-icon
+
+  .collapse.navbar-collapse#navMain
+    .navbar-nav.mr-auto
+      a.nav-item.nav-link(routerLink='lesson' routerLinkActive='active') Lessons
+      a.nav-item.nav-link(routerLink='about' routerLinkActive='active') About
+
+    span.navbar-text
+    | Coming soon to the App Store
+
+.container.content
+
+  router-outlet
+
+  footer
+    .row
+      .col-12
+
+        small &copy; 2020 by
+        |
+        a(href='https://www.michaelborgmann.com')  Michael Borgmann
