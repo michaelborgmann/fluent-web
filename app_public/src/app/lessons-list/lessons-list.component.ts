@@ -3,10 +3,10 @@ import { FluentDataService } from '../fluent-data.service';
 
 export class Lesson {
   _id: string;
-  //title: string;
-  //translation: string;
-  //imageURL: string;
-  //dialogue: string;
+  title: string;
+  translation: string;
+  imageURL: string;
+  dialogue: string;
 }
 
 @Component({
