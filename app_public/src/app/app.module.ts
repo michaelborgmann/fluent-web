@@ -6,12 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { LessonsListComponent } from './lessons-list/lessons-list.component';
 import { FrameworkComponent } from './framework/framework.component';
 import { AboutComponent } from './about/about.component';
+import { DialogueComponent } from './dialogue/dialogue.component';
 
 @NgModule({
   declarations: [
     LessonsListComponent,
     FrameworkComponent,
-    AboutComponent
+    AboutComponent,
+    DialogueComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +25,9 @@ import { AboutComponent } from './about/about.component';
       }, {
         path: 'about',
         component: AboutComponent
+      }, {
+        path: 'dialogue/:dialogueid',
+        component: DialogueComponent
       }
     ])
   ],
