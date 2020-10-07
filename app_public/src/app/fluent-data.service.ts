@@ -26,7 +26,7 @@ export class FluentDataService {
 
   public getDialogue(dialogueId: string): Promise<Dialogue> {
     const url: string = `${this.apiBaseUrl}/dialogues/${dialogueId}`;
-    
+
     return this.http
       .get(url)
       .toPromise()
