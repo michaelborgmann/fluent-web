@@ -1,0 +1,23 @@
+.title {
+  background-color: #F19B91;
+}
+
+.title.h6 {
+  background-color: #F5B4AD;
+}
+
+.outgoing {
+  background-color: #31A2FB;
+}
+
+.h6.outgoing {
+  background-color: #7EB7F8;
+}
+
+.incoming {
+  background-color: #E6E6EA;
+}
+
+.h6.incoming {
+  background-color: #ECECEF;
+}

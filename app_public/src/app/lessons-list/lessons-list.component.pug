@@ -1,10 +1,11 @@
 .h2 Lessons
 
-a(href=`dialogue/{{lesson.dialogue}}`).text-decoration-none.card.bg-light.mb-3(*ngFor='let lesson of lessons')
-  .row.no-gutters
-    .col-md-4
-      img.card-img(src=`{{lesson.imageURL.cloudinary}}` alt='' height='100')
+.card.text-decoration-none.bg-light.mb-3(*ngFor='let lesson of lessons')
+  .a(routerLink=`/dialogue/{{lesson.dialogue}}`)
+    .row.no-gutters
+      .col-md-4
+        img.card-img(src=`{{lesson.imageURL.cloudinary}}` alt='' height='100')
     
-    .card-body
-      .h5.card-title {{lesson.title}}
-      .h6.card-subtitle.mb-2.text-muted {{lesson.translation}}
+      .card-body
+        .h5.card-title {{lesson.title}}
+        .h6.card-subtitle.mb-2.text-muted {{lesson.translation}}

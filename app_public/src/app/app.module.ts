@@ -26,7 +26,7 @@ import { DialogueComponent } from './dialogue/dialogue.component';
         path: 'about',
         component: AboutComponent
       }, {
-        path: 'dialogue/:dialogueid',
+        path: 'dialogue/:dialogueId',
         component: DialogueComponent
       }
     ])

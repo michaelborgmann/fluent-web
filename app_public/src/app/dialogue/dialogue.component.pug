@@ -1,5 +1,17 @@
 .h2 Dialogue
 
-.bubble.bg-light.col-md-6(*ngFor='let message of messages')
-  .h4 {{message.original}}
-  .h5 {{message.translation}}
+.h4 {{dialogue?.targetLanguage}} - {{dialogue?.sourceLanguage}}
+
+.bubble.bg-light.col-md-6(*ngFor='let message of dialogue?.messages')
+
+  .title.text-light(*ngIf='message.type === "title"')
+    .h5 {{message.target}}
+    .h6.title {{message.source}}
+
+  .outgoing.text-light(*ngIf='message.sender === "user"')
+    .h5 {{message.target}}
+    .h6.outgoing {{message.source}}
+  
+  .incoming.text-dark(*ngIf='message.sender === "other"')
+    .h5 {{message.target}}
+    .h6.incoming {{message.source}}

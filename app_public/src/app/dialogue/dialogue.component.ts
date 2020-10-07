@@ -1,12 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { FluentDataService } from '../fluent-data.service';
+
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
 
 export class Message {
   type: string;
-  user: string
-  original: string;
-  translation: string;
-  audio: string
-  notes: string[];
+  sender: string;
+  target: string;
+  source: string;
+  //audio: string
+  //notes: string[];
+}
+
+export class Dialogue {
+  _id: string;
+  targetLanguage: string;
+  sourceLanguage: string;
+  messages: Message[];
 }
 
 @Component({
@@ -16,27 +27,33 @@ export class Message {
 })
 export class DialogueComponent implements OnInit {
 
-  public messages: Message[] = [
-    {
-      type: "title",
-      original: "A casa do Mitch",
-      translation: "Das Haus des Mitch"
-    }, {
-      type: "message",
-      user: "mitch",
-      original: "Bom-dia!",
-      translation: "Guten Tag!"
-    }, {
-      type: "message",
-      user: "yolanda",
-      original: "Tudo bem?",
-      translation: "Wie geht's?"
-    }
-  ];
+  constructor(
+    private fluentDataService: FluentDataService,
+    private route: ActivatedRoute
+  ) { }
 
-  constructor() { }
+  public dialogue: Dialogue;
+
+  /*
+  private getDialogue(dialogueId: string): void {
+    this.fluentDataService
+      .getDialogue(dialogueId)
+        .then(foundDialogue => this.dialogue = foundDialogue);
+  }
+  */
 
   ngOnInit(): void {
+
+    this.route.paramMap
+      .pipe(
+        switchMap((params: ParamMap) => {
+          let dialogueId = params.get('dialogueId');
+          return this.fluentDataService.getDialogue(dialogueId);
+        })
+      ).subscribe((newDialoge: Dialogue) => {
+          this.dialogue = newDialoge;
+      });
+
   }
 
 }
