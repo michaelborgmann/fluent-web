@@ -4,9 +4,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Lesson } from './lessons-list/lessons-list.component';
 import { Dialogue } from './dialogue/dialogue.component';
 
+import { User } from './user';
+import { AuthResponse } from './authresponse';
+
 @Injectable({
   providedIn: 'root'
 })
+
 export class FluentDataService {
 
   constructor(private http: HttpClient) { }
@@ -31,6 +35,24 @@ export class FluentDataService {
       .get(url)
       .toPromise()
       .then(response => response as Dialogue)
+      .catch(this.handleError);
+  }
+
+  public login(user: User): Promise<AuthResponse> {
+    return this.makeAuthApiCall('login', user);
+  }
+
+  public register(user: User): Promise<AuthResponse> {
+    return this.makeAuthApiCall('register', user);
+  }
+
+  private makeAuthApiCall(urlPath: string, user: User): Promise<AuthResponse> {
+    const url: string = `${this.apiBaseUrl}/${urlPath}`;
+
+    return this.http
+      .post(url, user)
+      .toPromise()
+      .then(response => response as AuthResponse)
       .catch(this.handleError);
   }
 
