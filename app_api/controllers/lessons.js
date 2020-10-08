@@ -1,26 +1,70 @@
 const mongoose = require('mongoose');
 const LessonModel = mongoose.model('Lesson');
+const User = mongoose.model('User');
+
+// authentication
+
+const getAuthor = (req, res, callback) => {
+
+  if (req.payload && req.payload.email) {
+    User
+      .findOne({ email : req.payload.email })
+      .exec((err, user) => {
+
+        if (!user) {
+          return res
+            .status(404)
+            .json({"message": "User not found"});
+
+        } else if (err) {
+
+          //console.log(err);
+          return res
+            .status(404)
+            .json(err);
+
+        }
+
+        callback(req, res, user.name);
+      });
+
+  } else {
+    return res
+      .status(404)
+      .json({"message": "User not found"});
+  }
+
+};
+
 
 // All Lessons
 
 const getAllLessons = function (req, res) {
-  LessonModel.find({}, function(err, lessons) {
 
-    if (!lessons) {
-      result
-        .json(404)
-        .status({"message": "no lessons found"})
+  console.log(req);
 
-    } else if (err) {
-      res
-        .status(404)
-        .json(err)
-    }
+  getAuthor(req, res, (req, res, username) => {
 
-    res
-      .status(200)
-      .json(lessons)
+      LessonModel.find({}, function(err, lessons) {
 
+        console.log(lessons);
+
+        if (!lessons) {
+          res
+            .json(404)
+            .status({"message": "no lessons found"})
+
+        } else if (err) {
+          res
+            .status(404)
+            .json(err)
+        }
+
+        res
+          .status(200)
+          .json(lessons)
+
+      });
   });
 };
 

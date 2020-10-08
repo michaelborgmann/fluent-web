@@ -1,15 +1,28 @@
 
 const express = require('express');
 const router = express.Router();
+const jwt = require('express-jwt');
 
+
+const auth = jwt({
+  secret: process.env.JWT_SECRET,
+  userProperty: 'payload',
+  algorithms: ['sha512', 'RS256', 'HS256'],
+});
+
+const authController = require('../controllers/authentication');
 const lessonsController = require('../controllers/lessons');
 const dialoguesController = require('../controllers/dialogues');
 const messagesController = require('../controllers/messages');
 
+// authentication
+router.post('/register', authController.register);
+router.post('/login', authController.login);
+
 // lessons
 router
   .route('/lessons')
-  .get(lessonsController.getAllLessons)
+  .get(auth, lessonsController.getAllLessons)
   .post(lessonsController.createLesson);
 
 router

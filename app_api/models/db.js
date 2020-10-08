@@ -47,4 +47,5 @@ process.on('SIGTERM', () => {
 
 require('./locations');
 require('./lessons');
+require('./users.js')
 //require('./dialogues')
