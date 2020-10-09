@@ -9,6 +9,7 @@ import { FrameworkComponent } from './framework/framework.component';
 import { AboutComponent } from './about/about.component';
 import { DialogueComponent } from './dialogue/dialogue.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RegisterComponent } from './register/register.component';
     FrameworkComponent,
     AboutComponent,
     DialogueComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,9 @@ import { RegisterComponent } from './register/register.component';
       }, {
         path: 'register',
         component: RegisterComponent
+      }, {
+        path: 'login',
+        component: LoginComponent
       }
     ])
   ],

@@ -1,15 +1,11 @@
-.h2 Register
+.h2 Login
 
 br
 
-form((ngSubmit)="onRegisterSubmit()")
+form((ngSubmit)="onLoginSubmit()")
 
   //.alert.alert-danger(role="alert" *ngIf="formErrors") {{ formError }}
-
-  .form-group.row
-    .col-12.col-sm-10
-      input.form-control([(ngModel)]='credentials.name' autocomplete="name" name="name" placeholder="Username")
-    
+  
   .form-group.row
     .col-12.col-sm-10
       input.form-control([(ngModel)]='credentials.email' type="email" autocomplete="username" name="email" placeholder="Email address")
@@ -20,5 +16,6 @@ form((ngSubmit)="onRegisterSubmit()")
 
   button(type="submit").btn.btn-success.btn-primary.float-right Submit
 
-.p.text-muted.small Already a member? Please #[a(routerLink="login") login] instead.
+.p.text-muted.small Not a member yet? Please #[a(routerLink="register") register] first.
+
 br
