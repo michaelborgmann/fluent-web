@@ -2,7 +2,7 @@ import { Inject, Injectable } from '@angular/core';
 import { BROWSER_STORAGE } from './storage';
 import { User } from './user';
 import { AuthResponse } from './authresponse';
-import { Loc8rDataService } from './fluent-data.service';
+import { FluentDataService } from './fluent-data.service';
 
 @Injectable({
   providedIn: 'root'
@@ -29,8 +29,8 @@ export class AuthenticationService {
   }
 
   public register(user: User): Promise<any> {
-    return this.loc8rDataService.register(user)
-    .then((authResp: AuthResponse) => this.saveToken(authResp.token));
+    return this.fluentDataService.register(user)
+      .then((authResp: AuthResponse) => this.saveToken(authResp.token));
   }
 
   public logout(): void {
