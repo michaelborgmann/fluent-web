@@ -12,16 +12,19 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
 
   .collapse.navbar-collapse#navMain
     .navbar-nav.mr-auto
-      a.nav-item.nav-link(routerLink='lesson' routerLinkActive='active') Lessons
-      a.nav-item.nav-link(routerLink='about' routerLinkActive='active') About
+      a.nav-item
+        a.nav-link(routerLink='lesson' routerLinkActive='active') Lessons
+      a.nav-item
+        a.nav-link(routerLink='about' routerLinkActive='active') About
+        
       .nav-item.dropdown
-        a.nav-link.dropdown-toggle(id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Dropdown
-        .dropwdown-menu(aria-labelledby="navbarDropdown")
-          .a.dropdown-item(routerLink="login") Login
-          .a.dropdown-item(routerLink="register") Register
-          .dropdown-divider
-          .a.dropdown-item(routerLink="register") Settings
-
+        a#navbarDropdown.nav-link.dropdown-toggle(routerLinkActive='active' role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") User
+        .dropdown-menu(aria-labelledby="navbarDropdown")
+          .a.dropdown-item(routerLink="login" routerLinkActive='active') Login
+          .a.dropdown-item(routerLink="register" routerLinkActive='active') Register
+          //.dropdown-divider
+          //.a.dropdown-item(routerLink="register") Settings
+    
     span.navbar-text
     | Coming soon to the App Store
 
@@ -33,19 +36,4 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
     .row
       .col-12
 
-        small &copy; 2020 by
-        |
-        a(href='https://www.michaelborgmann.com')  Michael Borgmann
-
-
-<li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria- haspopup="true" aria-expanded="false">
-    Dropdown
-  </a>
-  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</li>
+        small &copy; 2020 by #[a(href='https://www.michaelborgmann.com')  Michael Borgmann]
