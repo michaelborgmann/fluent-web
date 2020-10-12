@@ -4,6 +4,7 @@ import { FormGroup } from '@angular/forms';
 
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../authentication.service';
+import { HistoryService } from '../history.service';
 
 @Component({
   selector: 'app-login',
@@ -20,6 +21,13 @@ export class LoginComponent implements OnInit {
     password: ''
   };
 
+
+    constructor(
+      private router: Router,
+      private authenticationService: AuthenticationService,
+      private historyService: HistoryService
+    ) { }
+
   public onLoginSubmit(): void {
 
     this.formError = '';
@@ -34,14 +42,13 @@ export class LoginComponent implements OnInit {
 
   private doLogin(): void {
     this.authenticationService.login(this.credentials)
-      .then(() => this.router.navigateByUrl('/'))
-      .catch((message) => this.formError = message);
+    .then( () => {
+      this.router.navigateByUrl(this.historyService.getPreviousUrl());
+    })
+    .catch( (message) => {
+      this.formError = message;
+    });
   }
-
-  constructor(
-    private router: Router,
-    private authenticationService: AuthenticationService
-  ) { }
 
   ngOnInit(): void {
   }

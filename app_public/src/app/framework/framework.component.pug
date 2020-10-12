@@ -20,10 +20,11 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
       .nav-item.dropdown
         a#navbarDropdown.nav-link.dropdown-toggle(routerLinkActive='active' role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") User
         .dropdown-menu(aria-labelledby="navbarDropdown")
-          .a.dropdown-item(routerLink="login" routerLinkActive='active') Login
-          .a.dropdown-item(routerLink="register" routerLinkActive='active') Register
+          .a.dropdown-item(*ngIf="!isLoggedIn()" routerLink="login" routerLinkActive='active') Login
+          .a.dropdown-item(*ngIf="!isLoggedIn()" routerLink="register" routerLinkActive='active') Register
           //.dropdown-divider
-          //.a.dropdown-item(routerLink="register") Settings
+          .a(*ngIf="isLoggedIn()").dropdown-item((click)="doLogout()") Logout
+          .a.dropdown-item(*ngIf="isLoggedIn()" routerLink="settings") Settings
     
     span.navbar-text
     | Coming soon to the App Store
