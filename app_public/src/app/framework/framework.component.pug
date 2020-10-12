@@ -13,7 +13,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
   .collapse.navbar-collapse#navMain
     .navbar-nav.mr-auto
       a.nav-item
-        .a(*ngIf="isLoggedIn()").nav-link(routerLink='lesson' routerLinkActive='active') Lessons
+        .a.nav-link(*ngIf="isLoggedIn()" routerLink='lesson' routerLinkActive='active') Lessons
       a.nav-item
         a.nav-link(routerLink='about' routerLinkActive='active') About
 
@@ -23,7 +23,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
           .a.dropdown-item(*ngIf="!isLoggedIn()" routerLink="login" routerLinkActive='active') Login
           .a.dropdown-item(*ngIf="!isLoggedIn()" routerLink="register" routerLinkActive='active') Register
           //.dropdown-divider
-          .a(*ngIf="isLoggedIn()").dropdown-item((click)="doLogout()") Logout
+          .a.dropdown-item(*ngIf="isLoggedIn()", (click)="doLogout()") Logout
           .a.dropdown-item(*ngIf="isLoggedIn()" routerLink="settings") Settings
 
     span.navbar-text
