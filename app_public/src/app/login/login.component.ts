@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 //import {NgForm} from '@angular/forms';
 import { FormGroup } from '@angular/forms';
-
 import { Router } from '@angular/router';
+
 import { AuthenticationService } from '../authentication.service';
 import { HistoryService } from '../history.service';
 
@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
   private doLogin(): void {
     this.authenticationService.login(this.credentials)
     .then( () => {
-      this.router.navigateByUrl(this.historyService.getPreviousUrl());
+      this.router.navigateByUrl(this.historyService.getLastNonLoginUrl());
     })
     .catch( (message) => {
       this.formError = message;

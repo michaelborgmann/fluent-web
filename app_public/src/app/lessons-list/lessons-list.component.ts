@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FluentDataService } from '../fluent-data.service';
+import { AuthenticationService } from '../authentication.service';
 
 export class Lesson {
   _id: string;
@@ -17,7 +18,10 @@ export class Lesson {
 
 export class LessonsListComponent implements OnInit {
 
-  constructor(private fluentDataService: FluentDataService) { }
+  constructor(
+    private fluentDataService: FluentDataService,
+    private authenticationService: AuthenticationService
+  ) { }
 
   public lessons: Lesson[];
 
@@ -29,6 +33,15 @@ export class LessonsListComponent implements OnInit {
 
   ngOnInit() {
     this.getLessons();
+  }
+
+  public isLoggedIn(): boolean {
+    return this.authenticationService.isLoggedIn();
+  }
+
+  public getUsername(): string {
+    const { name } = this.authenticationService.getCurrentUser();
+    return name ? name : 'Guest';
   }
 
 }

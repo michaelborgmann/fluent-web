@@ -13,10 +13,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
   .collapse.navbar-collapse#navMain
     .navbar-nav.mr-auto
       a.nav-item
-        a.nav-link(routerLink='lesson' routerLinkActive='active') Lessons
+        .a(*ngIf="isLoggedIn()").nav-link(routerLink='lesson' routerLinkActive='active') Lessons
       a.nav-item
         a.nav-link(routerLink='about' routerLinkActive='active') About
-        
+
       .nav-item.dropdown
         a#navbarDropdown.nav-link.dropdown-toggle(routerLinkActive='active' role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") User
         .dropdown-menu(aria-labelledby="navbarDropdown")
@@ -25,7 +25,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
           //.dropdown-divider
           .a(*ngIf="isLoggedIn()").dropdown-item((click)="doLogout()") Logout
           .a.dropdown-item(*ngIf="isLoggedIn()" routerLink="settings") Settings
-    
+
     span.navbar-text
     | Coming soon to the App Store
 

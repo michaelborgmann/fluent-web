@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Lesson } from './lessons-list/lessons-list.component';
@@ -6,6 +6,7 @@ import { Dialogue } from './dialogue/dialogue.component';
 
 import { User } from './user';
 import { AuthResponse } from './authresponse';
+import { BROWSER_STORAGE } from './storage';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +14,10 @@ import { AuthResponse } from './authresponse';
 
 export class FluentDataService {
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    @Inject(BROWSER_STORAGE) private storage: Storage
+  ) { }
 
   //private apiBaseUrl = 'http://localhost:3000/api';
   private apiBaseUrl = 'http://lit-tor-33173.herokuapp.com/api';
@@ -21,8 +25,14 @@ export class FluentDataService {
   public getLessons(): Promise<Lesson[]> {
     const url: string = `${this.apiBaseUrl}/lessons`;
 
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Authorization': `Bearer ${this.storage.getItem('fluent-token')}`
+      })
+    };
+
     return this.http
-      .get(url)
+      .get(url, httpOptions)
       .toPromise()
       .then(response => response as Lesson[])
       .catch(this.handleError);
