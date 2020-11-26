@@ -36,18 +36,13 @@ const getAuthor = (req, res, callback) => {
 
 };
 
-
 // All Lessons
 
 const getAllLessons = function (req, res) {
 
-  console.log(req);
-
   getAuthor(req, res, (req, res, username) => {
 
       LessonModel.find({}, function(err, lessons) {
-
-        console.log(lessons);
 
         if (!lessons) {
           res

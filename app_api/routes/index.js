@@ -11,6 +11,7 @@ const auth = jwt({
 });
 
 const authController = require('../controllers/authentication');
+const coursesController = require('../controllers/courses');
 const lessonsController = require('../controllers/lessons');
 const dialoguesController = require('../controllers/dialogues');
 const messagesController = require('../controllers/messages');
@@ -18,6 +19,12 @@ const messagesController = require('../controllers/messages');
 // authentication
 router.post('/register', authController.register);
 router.post('/login', authController.login);
+
+// courses
+router
+  .route('/courses')
+  .get(auth, coursesController.getAllCourses)
+  .post(coursesController.createCourse);
 
 // lessons
 router
