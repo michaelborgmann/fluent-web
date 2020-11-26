@@ -8,7 +8,7 @@ import { HistoryService } from '../history.service';
 
 @Component({
   selector: 'app-register',
-  templateUrl: './register.component.pug',
+  templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
 

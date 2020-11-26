@@ -8,7 +8,7 @@ import { HistoryService } from '../history.service';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.pug',
+  templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
     ) { }
 
   public onLoginSubmit(): void {
-
+    
     this.formError = '';
 
     if (!this.credentials.email || !this.credentials.password) {

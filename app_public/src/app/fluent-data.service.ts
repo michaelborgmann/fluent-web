@@ -19,8 +19,8 @@ export class FluentDataService {
     @Inject(BROWSER_STORAGE) private storage: Storage
   ) { }
 
-  //private apiBaseUrl = 'http://localhost:3000/api';
-  private apiBaseUrl = 'http://lit-tor-33173.herokuapp.com/api';
+  private apiBaseUrl = 'http://localhost:3000/api';
+  //private apiBaseUrl = 'http://lit-tor-33173.herokuapp.com/api';
 
   public getLessons(): Promise<Lesson[]> {
     const url: string = `${this.apiBaseUrl}/lessons`;

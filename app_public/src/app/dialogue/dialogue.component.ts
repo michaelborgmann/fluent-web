@@ -22,7 +22,7 @@ export class Dialogue {
 
 @Component({
   selector: 'app-dialogue',
-  templateUrl: './dialogue.component.pug',
+  templateUrl: './dialogue.component.html',
   styleUrls: ['./dialogue.component.css']
 })
 export class DialogueComponent implements OnInit {

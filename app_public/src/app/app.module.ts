@@ -10,6 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { DialogueComponent } from './dialogue/dialogue.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { CoursesComponent } from './courses/courses.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './login/login.component';
     AboutComponent,
     DialogueComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,9 @@ import { LoginComponent } from './login/login.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       {
+        path: 'courses',
+        component: CoursesComponent
+      }, {
         path: 'lesson',
         component: LessonsListComponent
       }, {

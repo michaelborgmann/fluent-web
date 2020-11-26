@@ -1,0 +1,24 @@
+<h2>Register</h2>
+<form (submit)="onRegisterSubmit()">
+  <div class='form-group row'>
+    <div class="col-12 col-sm-10">
+      <input class='form-control' autocomplete="name" name="name" placeholder="Username" [(ngModel)]="credentials.name">
+    </div>
+  </div>
+  <div class='form-group row'>
+    <div class="col-12 col-sm-10">
+      <input class='form-control' type="email" autocomplete="username" name="email" placeholder="Email address" [(ngModel)]="credentials.email">
+    </div>
+  </div>
+  <div class='form-group row'>
+    <div class="col-12 col-sm-10">
+      <input class='form-control' type="password" autocomplete="new-password" name="password" placeholder="Password" [(ngModel)]="credentials.password">
+    </div>
+  </div>
+  <div class="col-12 col-sm-10">
+    <button type="submit" class="btn btn-success btn-primary float-right">Submit</button>
+  </div>
+</form>
+<p class='text-muted small'>
+  Already a member? Please <a routerLink='login'>login</a> instead.
+</p>

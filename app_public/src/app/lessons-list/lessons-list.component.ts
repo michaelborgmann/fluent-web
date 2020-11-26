@@ -12,7 +12,7 @@ export class Lesson {
 
 @Component({
   selector: 'app-lessons-list',
-  templateUrl: './lessons-list.component.pug',
+  templateUrl: './lessons-list.component.html',
   styleUrls: ['./lessons-list.component.css']
 })
 

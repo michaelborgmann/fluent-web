@@ -1,0 +1,16 @@
+<h2>Dialogue</h2>
+<h4>{{dialogue?.targetLanguage}} -{{dialogue?.sourceLanguage}}</h4>
+<div class='bubble bg-light.col-md-6' *ngFor='let message of dialogue?.messages'>
+  <div class='title text-light' *ngIf='message?.type === "title"'>
+    <h5>{{message?.target}}</h5>
+    <h6 class='title'>{{message?.source}}</h6>
+  </div>
+  <div class='outgoing text-light' *ngIf='message?.sender === "user"'>
+    <h5>{{message?.target}}</h5>
+    <h6 class='outgoing'>{{message?.source}}</h6>
+  </div>
+  <div class='incoming text-dark' *ngIf='message?.sender === "other"'>
+    <h5>{{message?.target}}</h5>
+    <h6 class='incoming'>{{message?.source}}</h6>
+  </div>
+</div>
