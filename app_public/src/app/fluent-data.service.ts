@@ -2,7 +2,7 @@ import { Injectable, Inject } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Course } from './courses/courses.component';
-import { Lesson } from './lessons-list/lessons-list.component';
+import { Lesson, CoursePopulated } from './lessons-list/lessons-list.component';
 import { Dialogue } from './dialogue/dialogue.component';
 
 import { User } from './user';
@@ -39,7 +39,7 @@ export class FluentDataService {
       .catch(this.handleError);
   }
 
-  public getCourse(courseId: string): Promise<Course> {
+  public getCourse(courseId: string): Promise<CoursePopulated> {
     const url: string = `${this.apiBaseUrl}/courses/${courseId}`;
 
     const httpOptions = {
@@ -51,7 +51,7 @@ export class FluentDataService {
     return this.http
       .get(url, httpOptions)
       .toPromise()
-      .then(response => response as Course)
+      .then(response => response as CoursePopulated)
       .catch(this.handleError);
   }
 

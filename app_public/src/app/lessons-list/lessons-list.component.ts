@@ -13,6 +13,12 @@ export class Lesson {
   dialogue: string;
 }
 
+export class CoursePopulated {
+  _id: string
+  title: string;
+  lessons: Lesson[];
+}
+
 @Component({
   selector: 'app-lessons-list',
   templateUrl: './lessons-list.component.html',
@@ -27,25 +33,17 @@ export class LessonsListComponent implements OnInit {
     private route: ActivatedRoute
   ) { }
 
-  public lessons: Lesson[];
-
-  private getLessons(): void {
-    this.fluentDataService
-      .getLessons()
-        .then(foundLessons => this.lessons = foundLessons);
-  }
+  public course: CoursePopulated;
 
   ngOnInit() {
-    //this.getLessons();
-
     this.route.paramMap
       .pipe(
         switchMap((params: ParamMap) => {
           let courseId = params.get('courseId');
           return this.fluentDataService.getCourse(courseId);
         })
-      ).subscribe((newCourse: Course) => {
-          this.lessons = newCourse.lessons;
+      ).subscribe((newCourse: CoursePopulated) => {
+          this.course = newCourse;
       });
   }
 

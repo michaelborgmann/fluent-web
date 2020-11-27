@@ -1,5 +1,5 @@
 <h2>Lessons</h2>
-<div class='card text-decoration-none bg-light mb-3' *ngFor='let lesson of lessons'>
+<div class='card text-decoration-none bg-light mb-3' *ngFor='let lesson of course?.lessons'>
   <a routerLink='/dialogue/{{lesson.dialogue}}'>
     <div class='row no-gutters'>
       <div class='col-md-4'>
