@@ -64,6 +64,38 @@ const getAllCourses = function (req, res) {
   });
 };
 
+// Get Course by Id
+
+const getCourseById = function (req, res) {
+
+  getAuthor(req, res, (req, res, username) => {
+
+    CourseModel
+      .findById(req.params.courseid)
+      .populate({ path: 'lessons', model: 'Lesson' })
+      .exec((err, course) => {
+
+        if (!course) {
+          return res
+            .status(404)
+            .json({
+              "message": "course not found"
+            });
+
+        } else if (err) {
+          return (res)
+            .status(404)
+            .json(err);
+        }
+
+        res
+          .status(200)
+          .json(course)
+
+      });
+  });
+};
+
 // Create course
 
 const createCourse = function (req, res) {
@@ -91,5 +123,6 @@ const createCourse = function (req, res) {
 
 module.exports = {
   getAllCourses,
+  getCourseById,
   createCourse
 }

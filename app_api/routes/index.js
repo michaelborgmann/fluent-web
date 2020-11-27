@@ -26,6 +26,10 @@ router
   .get(auth, coursesController.getAllCourses)
   .post(coursesController.createCourse);
 
+router
+  .route('/courses/:courseid')
+  .get(auth, coursesController.getCourseById);
+
 // lessons
 router
   .route('/lessons')

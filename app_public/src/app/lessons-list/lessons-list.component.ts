@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FluentDataService } from '../fluent-data.service';
 import { AuthenticationService } from '../authentication.service';
 
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
+
 export class Lesson {
   _id: string;
   title: string;
@@ -20,7 +23,8 @@ export class LessonsListComponent implements OnInit {
 
   constructor(
     private fluentDataService: FluentDataService,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
+    private route: ActivatedRoute
   ) { }
 
   public lessons: Lesson[];
@@ -32,7 +36,17 @@ export class LessonsListComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getLessons();
+    //this.getLessons();
+
+    this.route.paramMap
+      .pipe(
+        switchMap((params: ParamMap) => {
+          let courseId = params.get('courseId');
+          return this.fluentDataService.getCourse(courseId);
+        })
+      ).subscribe((newCourse: Course) => {
+          this.lessons = newCourse.lessons;
+      });
   }
 
   public isLoggedIn(): boolean {

@@ -19,8 +19,6 @@ const createDialogue = async (req, res) => {
 
         } else {
           addDialogue(req, res, lesson);
-
-
         }
       });
 
@@ -42,10 +40,13 @@ const addDialogue = async (req, res, lesson) => {
 
   } else {
 
+    console.log("ADD DIALOGUE");
+    console.log("RES\n" + req);
+
     const dialogue = DialogueModel.create({
-      targetLanguage: req.body[0].targetLanguage,
-      sourceLanguage: req.body[0].sourceLanguage,
-      messages: req.body[0].messages
+      targetLanguage: req.body.targetLanguage,
+      sourceLanguage: req.body.sourceLanguage,
+      messages: req.body.messages
 
     } , (err, dialogue) => {
       if (err) {
@@ -74,7 +75,6 @@ const addDialogue = async (req, res, lesson) => {
 
       }
     });
-
   }
 
 }

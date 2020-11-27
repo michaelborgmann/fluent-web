@@ -8,8 +8,8 @@
   </button>
   <div class="collapse navbar-collapse" id="navMain">
     <div class="navbar-nav mr-auto">
-      <a *ngIf="isLoggedIn()" class="nav-link" routerLink='courses' routerLinkActive='active'>Courses</a>
-      <a *ngIf="isLoggedIn()" class="nav-link" routerLink='lesson' routerLinkActive='active'>Lessons</a>
+      <!-- a *ngIf="isLoggedIn()" class="nav-link" routerLink='courses' routerLinkActive='active'>Courses</a>
+      <a *ngIf="isLoggedIn()" class="nav-link" routerLink='lesson' routerLinkActive='active'>Lessons</a-->
       <a class="nav-link" routerLink='about' routerLinkActive='active'>About</a>
       <a class="nav-link dropdown-toggle" routerLinkActive="active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User</a>
       <div class="nav-item dropdown">
@@ -27,11 +27,11 @@
 </nav>
 <div class="container">
   <router-outlet></router-outlet>
-</div>
-<footer>
-  <div class='row'>
-    <div class='col-12'>
-      <small>&copy; 2020 by <a href='https://www.michaelborgmann.com'>Michael Borgmann</a></small>
+  <footer>
+    <div class='row'>
+      <div class='col-12'>
+        <small>&copy; 2020 by <a href='https://www.michaelborgmann.com'>Michael Borgmann</a></small>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</div>

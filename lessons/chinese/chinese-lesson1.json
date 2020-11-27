@@ -1,0 +1,52 @@
+{
+    "targetLanguage": "chinese",
+    "sourceLanguage": "english",
+    "imageURL": [
+        "cloudinary": "https://res.cloudinary.com/dvtdd827t/image/upload/v1599648281/fluent/portuguese_course-lesson_2-em_lisboa.jpg"
+    ]
+    "messages": [{
+        "type": "title",
+        "target": "Dì yī kè",
+        "source": "First Lesson"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "你好! (Nǐ hǎo!)",
+        "source": "Hello! (you good!)"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "你好! (Nǐ hǎo!)",
+        "source": "Hello! (you good!)"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "你俄吗? (Nǐ è ma?)",
+        "source": "Are you hungry? (you hungry interrogative?)"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "我不饿! (Wǒ bú è!)",
+        "source": "No, I'm not. (I negative hungry!)"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "你累吗? (Nǐ lèi ma?)",
+        "source": "Are you tired? (you tired interr.?)"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "我不累! (!ǒ bú lèi!)",
+        "source": "No, I'm not. (I neg. tired!)"
+    }, {
+        "type": "message",
+        "sender": "user",
+        "target": "好!走! (Hǎo! Zǒu!)",
+        "source": "Well, let's go! (good! go!)"
+    }, {
+        "type": "message",
+        "sender": "other",
+        "target": "走! (Zǒu!)",
+        "source": "Let's go! (go!)"
+    }]
+}

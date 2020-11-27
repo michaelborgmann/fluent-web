@@ -29,8 +29,11 @@ import { CoursesComponent } from './courses/courses.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       {
-        path: 'courses',
+        path: '',
         component: CoursesComponent
+      }, {
+        path: 'courses/:courseId',
+        component: LessonsListComponent
       }, {
         path: 'lesson',
         component: LessonsListComponent

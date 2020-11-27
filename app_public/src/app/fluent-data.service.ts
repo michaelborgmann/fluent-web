@@ -1,6 +1,7 @@
 import { Injectable, Inject } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+import { Course } from './courses/courses.component';
 import { Lesson } from './lessons-list/lessons-list.component';
 import { Dialogue } from './dialogue/dialogue.component';
 
@@ -21,6 +22,38 @@ export class FluentDataService {
 
   private apiBaseUrl = 'http://localhost:3000/api';
   //private apiBaseUrl = 'http://lit-tor-33173.herokuapp.com/api';
+
+  public getCourses(): Promise<Course[]> {
+    const url: string = `${this.apiBaseUrl}/courses`;
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Authorization': `Bearer ${this.storage.getItem('fluent-token')}`
+      })
+    };
+
+    return this.http
+      .get(url, httpOptions)
+      .toPromise()
+      .then(response => response as Course[])
+      .catch(this.handleError);
+  }
+
+  public getCourse(courseId: string): Promise<Course> {
+    const url: string = `${this.apiBaseUrl}/courses/${courseId}`;
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Authorization': `Bearer ${this.storage.getItem('fluent-token')}`
+      })
+    };
+
+    return this.http
+      .get(url, httpOptions)
+      .toPromise()
+      .then(response => response as Course)
+      .catch(this.handleError);
+  }
 
   public getLessons(): Promise<Lesson[]> {
     const url: string = `${this.apiBaseUrl}/lessons`;
