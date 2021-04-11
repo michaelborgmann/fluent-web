@@ -11,6 +11,7 @@ import { DialogueComponent } from './dialogue/dialogue.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { CoursesComponent } from './courses/courses.component';
+import { SettingsComponent } from './settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CoursesComponent } from './courses/courses.component';
     DialogueComponent,
     RegisterComponent,
     LoginComponent,
-    CoursesComponent
+    CoursesComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +51,9 @@ import { CoursesComponent } from './courses/courses.component';
       }, {
         path: 'login',
         component: LoginComponent
+      }, {
+        path: 'settings',
+        component: SettingsComponent
       }
     ])
   ],

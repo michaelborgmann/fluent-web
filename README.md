@@ -1,5 +1,22 @@
 # Fluent Web
 
+## Run the Stack
+
+Run Database:
+
+```
+$ export NODE_ENV=production
+$ export MONGODB_URI='mongodb+srv://<username>:<password>@<hostname>/<database>'
+$ mongo "mongodb+srv://cluster0.e3g4l.mongodb.net/fluent" --username michael
+```
+
+Run Angular App:
+
+```
+$ cd app_public
+$ ng serve
+```
+
 ## Launch
 
 Start app: $ DEBUG=fluent:* npm start
@@ -111,63 +128,3 @@ Push to Heroku:
 $ git add -A
 $ git commit -m "Commit comment"
 $ git push heroku master
-
-### Schemes
-
-## Schemes
-
-```javascript
-db.locations.save({
-  name: 'Starcups',
-  address: '125 High Street, Reading, RG6 1PS',
-  rating: 3,
-  facilities: ['Hot drinks', 'Food', 'Premium wifi'],
-  coords: [-0.9690884, 51.455041],
-  openingTimes: [{
-    days: 'Monday - Friday',
-    opening: '7:00am',
-    closing: '7:00pm',
-    closed: false
-  }, {
-    days: 'Saturday',
-    opening: '8:00am',
-    closing: '5:00pm',
-    closed: false
-  }, {
-    days: 'Sunday',
-    closed: true
-  }]
-})
-```
-
-```javascript
-db.locations.update({
-  name: 'Starcups'
-}, {
-  $push: {
-    reviews: {
-      author: 'Simon Holmes',
-      _id: ObjectId(),
-      rating: 5,
-      timestamp: new Date("Mar 12, 2017"),
-      reviewText: "What a great place."
-    }
-  }
-})
-```
-
-```javascript
-db.locations.update({
-  name: 'Starcups'
-}, {
-  $push: {
-    reviews: {
-      author: 'Charlie Chaplin',
-      _id: ObjectId(),
-      rating: 3,
-      timestamp: new Date("June 16, 2013"),
-      reviewText: "It was okay. Coffee wan\'t great, but the wifi was fast."
-    }
-  }
-})
-```
