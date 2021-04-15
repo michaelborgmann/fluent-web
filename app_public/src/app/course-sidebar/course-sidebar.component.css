@@ -1,0 +1,8 @@
+#sidebar {
+  padding: 30px;
+
+  position: fixed;
+  left: 0;
+
+  min-height: 100vh;
+}

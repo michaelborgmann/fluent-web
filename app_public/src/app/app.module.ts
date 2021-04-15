@@ -12,6 +12,8 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { CoursesComponent } from './courses/courses.component';
 import { SettingsComponent } from './settings/settings.component';
+import { CourseCreateComponent } from './course-create/course-create.component';
+import { CourseSidebarComponent } from './course-sidebar/course-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { SettingsComponent } from './settings/settings.component';
     RegisterComponent,
     LoginComponent,
     CoursesComponent,
-    SettingsComponent
+    SettingsComponent,
+    CourseCreateComponent,
+    CourseSidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +58,9 @@ import { SettingsComponent } from './settings/settings.component';
       }, {
         path: 'settings',
         component: SettingsComponent
+      }, {
+        path: 'course-create',
+        component: CourseCreateComponent
       }
     ])
   ],

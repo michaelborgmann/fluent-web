@@ -19,6 +19,7 @@
         <a *ngIf="!isLoggedIn()" class="dropdown-item" routerLink='register' routerLinkActive='active'>Register</a>
         <!--div class="dropdown-divider"></div-->
         <a *ngIf="isLoggedIn()" class="dropdown-item" (click)="doLogout()">Logout</a>
+        <a *ngIf="isLoggedIn()" class="dropdown-item" routerLink='course-create' routerLinkActive='active'>Create Course</a>
         <a *ngIf="isLoggedIn()" class="dropdown-item" routerLink='settings' routerLinkActive='active'>Settings</a>
       </div>
     </div>
