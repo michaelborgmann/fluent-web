@@ -12,8 +12,9 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { CoursesComponent } from './courses/courses.component';
 import { SettingsComponent } from './settings/settings.component';
-import { CourseCreateComponent } from './course-create/course-create.component';
+import { CourseEditComponent } from './course-edit/course-edit.component';
 import { CourseSidebarComponent } from './course-sidebar/course-sidebar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +26,9 @@ import { CourseSidebarComponent } from './course-sidebar/course-sidebar.componen
     LoginComponent,
     CoursesComponent,
     SettingsComponent,
-    CourseCreateComponent,
-    CourseSidebarComponent
+    CourseEditComponent,
+    CourseSidebarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -59,8 +61,8 @@ import { CourseSidebarComponent } from './course-sidebar/course-sidebar.componen
         path: 'settings',
         component: SettingsComponent
       }, {
-        path: 'course-create',
-        component: CourseCreateComponent
+        path: 'courses/edit/:coureId',
+        component: CourseEditComponent
       }
     ])
   ],

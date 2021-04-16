@@ -2,3 +2,14 @@
   min-width: 30rem;
   max-width: 40rem;
 }
+
+.edit {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  z-index: 100;
+}
+
+.edit > * {
+  margin: 8px 0 0 8px;
+}
