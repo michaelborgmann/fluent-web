@@ -1,0 +1,17 @@
+#editor {
+  border-radius: 3em;
+}
+
+#editor-card {
+  border-radius: 1em;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.edit > * {
+  margin: 8px 0 0 8px;
+}
+
+.card {
+  margin-bottom: 10px;
+}

@@ -1,15 +1,18 @@
-<h2>Lessons</h2>
-<h4>{{course?.title}}</h4>
-<div class='card text-decoration-none bg-light mb-3' *ngFor='let lesson of course?.lessons'>
-  <a routerLink='/dialogue/{{lesson.dialogue}}'>
-    <div class='row no-gutters'>
-      <div class='col-md-4'>
-        <img class='card-img' src='{{lesson.imageURL.cloudinary}}' height="100">
+<div class='container'>
+
+  <h2>Lessons</h2>
+  <h4>{{course?.title}}</h4>
+  <div class='card text-decoration-none bg-light mb-3' *ngFor='let lesson of course?.lessons'>
+    <a routerLink='/dialogue/{{lesson.dialogue}}'>
+      <div class='row no-gutters'>
+        <div class='col-md-4'>
+          <img class='card-img' src='{{lesson.imageURL.cloudinary}}' height="100">
+        </div>
+        <div class='card-body'>
+          <h5 class='card-title'>{{lesson.title}}</h5>
+          <h6 class='card-subtitle mb-2 text-muted'>{{lesson.translation}}</h6>
+        </div>
       </div>
-      <div class='card-body'>
-        <h5 class='card-title'>{{lesson.title}}</h5>
-        <h6 class='card-subtitle mb-2 text-muted'>{{lesson.translation}}</h6>
-      </div>
-    </div>
-  </a>
+    </a>
+  </div>
 </div>

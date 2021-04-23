@@ -1,39 +1,20 @@
-<h2>Courses</h2>
+<div class='container'>
 
-<!--
-<div class='card text-decoration-none bg-light mb-3' *ngFor='let course of courses'>
-    <div class='row no-gutters'>
-      <!--div class='col-md-4'>
-        <img class='card-img' src='{{lesson.imageURL.cloudinary}}' height="100">
-      </div
-      <div class='card-body'>
-        <a routerLink='/courses/{{course._id}}'>
-          <h5 class='card-title'>{{course.title}}</h5>
-        </a>
+  <h2>Courses</h2>
+
+  <div class='card text-decoration-none bg-light mb-3' *ngFor='let course of courses'>
+    <div class='card-body'>
+
+      <a routerLink='/courses/{{course._id}}'>
+        <h5 class='card-title'>{{course.title}}</h5>
+      </a>
+
+      <div class='edit'>
+        <a class='text-dark' routerLink='/courses/edit/{{course._id}}'><i class="bi bi-pencil-square"></i></a>
+        <a class='text-dark' href='#'><i class="bi bi-trash"></i></a>
+        <a class='text-dark' href='#'><i class="bi bi-list"></i></a>
       </div>
 
-      <div class='row edit'>
-        <!-- <button type="button" class="btn btn-light"><i class="bi bi-pencil-square" aria-hidden="true"></i></button>
-        <button type="button" class="btn btn-light"><i class="bi bi-trash"></i></button>
-        <button type="button" class="btn btn-light"><i class="bi bi-list"></i></button>
-        <i class="bi bi-pencil-square" aria-hidden="true"></i>
-        <i class="bi bi-trash"></i>
-        <i class="bi bi-list"></i>
-      </div>
-
-    </div>
-
-</div>
--->
-<div class='card text-decoration-none bg-light mb-3' *ngFor='let course of courses'>
-  <div class='card-body'>
-    <a routerLink='/courses/{{course._id}}'>
-      <h5 class='card-title'>{{course.title}}</h5>
-    </a>
-    <div class='edit'>
-      <a class='text-dark' routerLink='/courses/edit/{{course._id}}'><i class="bi bi-pencil-square"></i></a>
-      <a class='text-dark' href='#'><i class="bi bi-trash"></i></a>
-      <a class='text-dark' href='#'><i class="bi bi-list"></i></a>
     </div>
   </div>
 </div>

@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { SortablejsModule } from 'ngx-sortablejs'
+
 import { LessonsListComponent } from './lessons-list/lessons-list.component';
 import { FrameworkComponent } from './framework/framework.component';
 import { AboutComponent } from './about/about.component';
@@ -15,6 +17,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { CourseEditComponent } from './course-edit/course-edit.component';
 import { CourseSidebarComponent } from './course-sidebar/course-sidebar.component';
 import { FooterComponent } from './footer/footer.component';
+import { CourseCurriculumComponent } from './course-curriculum/course-curriculum.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +31,15 @@ import { FooterComponent } from './footer/footer.component';
     SettingsComponent,
     CourseEditComponent,
     CourseSidebarComponent,
-    FooterComponent
+    FooterComponent,
+    CourseCurriculumComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    SortablejsModule.forRoot({}),
     RouterModule.forRoot([
       {
         path: '',
@@ -61,8 +66,14 @@ import { FooterComponent } from './footer/footer.component';
         path: 'settings',
         component: SettingsComponent
       }, {
-        path: 'courses/edit/:coureId',
-        component: CourseEditComponent
+        path: 'courses/edit/:courseId',
+        component: CourseEditComponent,
+        children: [
+          {
+            path: 'curriculum',
+            component: CourseCurriculumComponent
+          }
+        ],
       }
     ])
   ],
