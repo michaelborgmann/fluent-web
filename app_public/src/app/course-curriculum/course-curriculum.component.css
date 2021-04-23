@@ -1,11 +1,11 @@
 #editor {
-  border-radius: 3em;
+  border-radius: 2em;
 }
 
 #editor-card {
   border-radius: 1em;
   margin-top: 40px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .edit > * {
@@ -14,4 +14,11 @@
 
 .card {
   margin-bottom: 10px;
+}
+
+.card-header .fa {
+  transition: .3s transform ease-in-out;
+}
+.card-header .collapsed .fa {
+  transform: rotate(90deg);
 }
