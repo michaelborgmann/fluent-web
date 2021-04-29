@@ -6,14 +6,56 @@
 <div id='editor' class='card shadow-lg p-3 bg-white'>
 
   <h5 class="card-header border-0 bg-white">
-      <a data-bs-toggle="collapse" href="#collapse-example" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="d-block">
+      <a data-bs-toggle="collapse" href="#collapse-example" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="collapsed d-block">
           <i class="fa fa-chevron-down float-end"></i>
 
       </a>
       Lesson 1: Bom Dia!
   </h5>
 
-  <div id="collapse-example" class="collapse show" aria-labelledby="heading-example">
+  <div id="collapse-example" class="collapse" aria-labelledby="heading-example">
+    <div class="card-body">
+
+      <form action=''>
+        <div class="form-group">
+          <label>Title</label>
+          <input class='form-control' type='text' placeholder='Example. lorem ipsum dolor sit amet'>
+        </div>
+        <div class="form-group">
+          <label>About</label>
+          <input class='form-control' type='text' placeholder='Example. lorem ipsum dolor sit amet'>
+        </div>
+      </form>
+
+      <div id='editor-card' class='border shadow' [sortablejs]='list' [sortablejsOptions]='eventOptions'>
+        <div class='card draggable' *ngFor='let item of list; let i = index'>
+          <div class='card-body rounded border shadow bg-light'>
+            {{item.SortOrder || i + 1}}. {{item.Caption}}<span *ngIf="item.Details">: <i>{{item.Details}}</i></span>
+            <span class='edit' style="float:right;">
+                <a class='text-dark' href='#'><i class="bi bi-pencil-square"></i></a>
+                <a class='text-dark' href='#'><i class="bi bi-trash"></i></a>
+                <a class='text-dark' href='#'><i class="bi bi-list"></i></a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<div id='editor' class='card shadow-lg p-3 bg-white'>
+
+  <h5 class="card-header border-0 bg-white">
+      <a data-bs-toggle="collapse" href="#collapse-2" aria-expanded="true" aria-controls="collapse-2" id="heading-2" class="d-block">
+          <i class="fa fa-chevron-down float-end"></i>
+
+      </a>
+      Lesson 1: Bom Dia!
+  </h5>
+
+  <div id="collapse-2" class="collapse show" aria-labelledby="heading-2">
     <div class="card-body">
 
       <form action=''>

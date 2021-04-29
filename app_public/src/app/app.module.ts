@@ -64,7 +64,7 @@ import { CourseCurriculumComponent } from './course-curriculum/course-curriculum
         component: LoginComponent
       }, {
         path: 'settings',
-        component: SettingsComponent
+        component: CourseSidebarComponent
       }, {
         path: 'courses/edit/:courseId',
         component: CourseEditComponent,

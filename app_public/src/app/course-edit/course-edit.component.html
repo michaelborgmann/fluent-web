@@ -1,16 +1,13 @@
+<div class="container-fluid">
+  <div class="row">
 
-<div class='container-fluid'>
-
-  <div class='row'>
-
-    <div>
-      <!-- <app-course-sidebar [content]='pageContent'></app-course-sidebar> -->
+    <div class="sidebar col-md-3 col-lg-2 d-md-block shadow">
+      <app-course-sidebar [content]='pageContent'></app-course-sidebar>
     </div>
 
-    <div class="col-sm">
+    <main class="content col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <router-outlet></router-outlet>
-    </div>
+    </main>
 
   </div>
-
 </div>

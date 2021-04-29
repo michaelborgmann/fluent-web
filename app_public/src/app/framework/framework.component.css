@@ -1,3 +1,12 @@
 #logoImage {
   border-radius: 20%;
 }
+
+/* :host ::ng-deep { */
+/* :host-context(.body) body { */
+/*
+body > * {
+  flex-shrink: 0;
+  min-height: -webkit-fill-available;
+}
+*/
